@@ -1,0 +1,20 @@
+{
+  "eval_id": 1,
+  "eval_name": "dwp-bank-siem-expert",
+  "prompt": "Ich habe n\u00e4chste Woche ein Vorstellungsgespr\u00e4ch bei der Deutschen WertpapierService Bank (dwp-bank) f\u00fcr die Stelle 'Experte Informationssicherheit mit Schwerpunkt SIEM'. Kannst du mir die Interview-Vorbereitung schreiben? Die Unterlagen liegen in /Users/canystrix/dev/job-applications/dwp-bank/.",
+  "assertions": [
+    {"id": "has_md", "text": "Output directory contains an interview-prep .md file"},
+    {"id": "has_docx", "text": "Output directory contains an interview-prep .docx file"},
+    {"id": "is_german", "text": "Markdown body is primarily in German (contains typical German words like 'Frage', 'Antwort', 'Unternehmen')"},
+    {"id": "section_fragen", "text": "Contains a section header matching 'Wahrscheinliche Fragen' or equivalent (Frage/F:)"},
+    {"id": "section_luecken", "text": "Contains a section addressing gaps/risks (Lücken/Risiken/Schwächen)"},
+    {"id": "section_highlights", "text": "Contains a section with talking points/highlights (Highlights/Gesprächs-/Stärken)"},
+    {"id": "section_fragen_an", "text": "Contains a section with questions to ask the company (Fragen an das Unternehmen/Rückfragen)"},
+    {"id": "qa_count", "text": "At least 10 distinct interview questions are listed"},
+    {"id": "qa_format", "text": "Q&A entries follow the skill's F:/A-Skizze:/Verbindung: pattern (at least 5 entries conform)"},
+    {"id": "no_konzernweit", "text": "Does not use 'konzernweit'/'unternehmensweit' language for Lutz's ISMS scope"},
+    {"id": "db_systel_correct", "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn' (not Infrastrukturdienstleister)"},
+    {"id": "role_specific_siem", "text": "Content is tailored to SIEM role (mentions SIEM, Use Cases, Alerting, SOC, or similar role-specific terms)"},
+    {"id": "company_specific_questions", "text": "Section 4 contains questions that reference the specific company/role (not generic)"}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.9231,
+    "passed": 12,
+    "failed": 1,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "17698 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": true,
+      "evidence": "docx present"
+    },
+    {
+      "text": "Markdown body is primarily in German",
+      "passed": true,
+      "evidence": "190 German markers detected"
+    },
+    {
+      "text": "Contains a section with likely interview questions",
+      "passed": true,
+      "evidence": "matched 'Wahrscheinliche Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights",
+      "passed": true,
+      "evidence": "matched 'Highlights'"
+    },
+    {
+      "text": "Contains a section with questions to ask the company",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions",
+      "passed": true,
+      "evidence": "14 'F:' markers"
+    },
+    {
+      "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+      "passed": true,
+      "evidence": "14 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+      "passed": true,
+      "evidence": "clean"
+    },
+    {
+      "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn'",
+      "passed": true,
+      "evidence": "DB Systel mentioned 2x; IT-Partner=True; wrong-framing=False"
+    },
+    {
+      "text": "Honestly addresses the senior-consultant experience gap",
+      "passed": false,
+      "evidence": "no consulting-gap framing found"
+    },
+    {
+      "text": "Section 4 contains questions referencing QAS Company AG specifically",
+      "passed": true,
+      "evidence": "found 'QAS'"
+    }
+  ]
+}

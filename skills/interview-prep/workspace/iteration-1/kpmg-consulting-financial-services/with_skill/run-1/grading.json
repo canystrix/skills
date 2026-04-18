@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.9231,
+    "passed": 12,
+    "failed": 1,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "18543 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": true,
+      "evidence": "docx present"
+    },
+    {
+      "text": "Markdown body is primarily in German",
+      "passed": true,
+      "evidence": "199 German markers detected"
+    },
+    {
+      "text": "Contains a section with likely interview questions",
+      "passed": true,
+      "evidence": "matched 'Wahrscheinliche Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights",
+      "passed": true,
+      "evidence": "matched 'Highlights'"
+    },
+    {
+      "text": "Contains a section with questions to ask the company",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions",
+      "passed": true,
+      "evidence": "15 'F:' markers"
+    },
+    {
+      "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+      "passed": true,
+      "evidence": "15 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+      "passed": false,
+      "evidence": "2 claim(s): ['Bei DB Systel arbeite ich in einem konzernweiten ISMS-Kontext, der auditgetriebe', 'Ich habe bei der DB als Übersetzer und Terminologe angefangen und dort die konze']"
+    },
+    {
+      "text": "Honestly addresses the gap that Lutz has no prior consulting experience",
+      "passed": true,
+      "evidence": "cues: ['keine Beratung']"
+    },
+    {
+      "text": "Mentions at least one financial-services regulation/framework (DORA, BAIT, MaRisk, NIS-2)",
+      "passed": true,
+      "evidence": "found: ['DORA', 'BAIT', 'MaRisk']"
+    },
+    {
+      "text": "Section 4 contains questions referencing KPMG specifically",
+      "passed": true,
+      "evidence": "found 'KPMG'"
+    }
+  ]
+}

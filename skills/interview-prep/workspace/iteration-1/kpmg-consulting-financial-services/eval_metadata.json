@@ -1,0 +1,20 @@
+{
+  "eval_id": 2,
+  "eval_name": "kpmg-consulting-financial-services",
+  "prompt": "Bitte bereite mich auf das Bewerbungsgespr\u00e4ch bei KPMG f\u00fcr die Rolle 'Senior Consultant Cyber Security Financial Services' vor. Application folder: /Users/canystrix/dev/job-applications/kpmg/.",
+  "assertions": [
+    {"id": "has_md", "text": "Output directory contains an interview-prep .md file"},
+    {"id": "has_docx", "text": "Output directory contains an interview-prep .docx file"},
+    {"id": "is_german", "text": "Markdown body is primarily in German"},
+    {"id": "section_fragen", "text": "Contains a section with likely interview questions"},
+    {"id": "section_luecken", "text": "Contains a section addressing gaps/risks"},
+    {"id": "section_highlights", "text": "Contains a section with talking points/highlights"},
+    {"id": "section_fragen_an", "text": "Contains a section with questions to ask the company"},
+    {"id": "qa_count", "text": "At least 10 distinct interview questions"},
+    {"id": "qa_format", "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)"},
+    {"id": "no_konzernweit", "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz"},
+    {"id": "consulting_gap_honest", "text": "Honestly addresses the gap that Lutz has no prior consulting experience"},
+    {"id": "fs_regulatory_coverage", "text": "Mentions at least one financial-services regulation/framework (DORA, BAIT, MaRisk, NIS-2)"},
+    {"id": "company_specific_questions", "text": "Section 4 contains questions referencing KPMG specifically"}
+  ]
+}

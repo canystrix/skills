@@ -1,0 +1,563 @@
+{
+  "metadata": {
+    "skill_name": "interview-prep",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-04-17T21:24:43Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.9231,
+        "passed": 12,
+        "failed": 1,
+        "total": 13,
+        "time_seconds": 179.4,
+        "tokens": 48941,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "18687 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": true,
+          "evidence": "docx present"
+        },
+        {
+          "text": "Markdown body is primarily in German (contains typical German words like 'Frage', 'Antwort', 'Unternehmen')",
+          "passed": true,
+          "evidence": "192 German markers detected"
+        },
+        {
+          "text": "Contains a section header matching 'Wahrscheinliche Fragen' or equivalent (Frage/F:)",
+          "passed": true,
+          "evidence": "matched 'Wahrscheinliche Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks (L\u00fccken/Risiken/Schw\u00e4chen)",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights (Highlights/Gespr\u00e4chs-/St\u00e4rken)",
+          "passed": true,
+          "evidence": "matched 'Highlights'"
+        },
+        {
+          "text": "Contains a section with questions to ask the company (Fragen an das Unternehmen/R\u00fcckfragen)",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions are listed",
+          "passed": true,
+          "evidence": "14 'F:' markers"
+        },
+        {
+          "text": "Q&A entries follow the skill's F:/A-Skizze:/Verbindung: pattern (at least 5 entries conform)",
+          "passed": true,
+          "evidence": "14 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not use 'konzernweit'/'unternehmensweit' language for Lutz's ISMS scope",
+          "passed": false,
+          "evidence": "1 claim(s): ['Als Language Data Engineer bei der Deutschen Bahn habe ich zwei konzernweite Anw']"
+        },
+        {
+          "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn' (not Infrastrukturdienstleister)",
+          "passed": true,
+          "evidence": "DB Systel mentioned 4x; IT-Partner=True; wrong-framing=False"
+        },
+        {
+          "text": "Content is tailored to SIEM role (mentions SIEM, Use Cases, Alerting, SOC, or similar role-specific terms)",
+          "passed": true,
+          "evidence": "4/6 SIEM terms"
+        },
+        {
+          "text": "Section 4 contains questions that reference the specific company/role (not generic)",
+          "passed": true,
+          "evidence": "found 'dwpbank'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.9231,
+        "passed": 12,
+        "failed": 1,
+        "total": 13,
+        "time_seconds": 177.0,
+        "tokens": 53760,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "18543 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": true,
+          "evidence": "docx present"
+        },
+        {
+          "text": "Markdown body is primarily in German",
+          "passed": true,
+          "evidence": "199 German markers detected"
+        },
+        {
+          "text": "Contains a section with likely interview questions",
+          "passed": true,
+          "evidence": "matched 'Wahrscheinliche Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights",
+          "passed": true,
+          "evidence": "matched 'Highlights'"
+        },
+        {
+          "text": "Contains a section with questions to ask the company",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions",
+          "passed": true,
+          "evidence": "15 'F:' markers"
+        },
+        {
+          "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+          "passed": true,
+          "evidence": "15 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+          "passed": false,
+          "evidence": "2 claim(s): ['Bei DB Systel arbeite ich in einem konzernweiten ISMS-Kontext, der auditgetriebe', 'Ich habe bei der DB als \u00dcbersetzer und Terminologe angefangen und dort die konze']"
+        },
+        {
+          "text": "Honestly addresses the gap that Lutz has no prior consulting experience",
+          "passed": true,
+          "evidence": "cues: ['keine Beratung']"
+        },
+        {
+          "text": "Mentions at least one financial-services regulation/framework (DORA, BAIT, MaRisk, NIS-2)",
+          "passed": true,
+          "evidence": "found: ['DORA', 'BAIT', 'MaRisk']"
+        },
+        {
+          "text": "Section 4 contains questions referencing KPMG specifically",
+          "passed": true,
+          "evidence": "found 'KPMG'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.9231,
+        "passed": 12,
+        "failed": 1,
+        "total": 13,
+        "time_seconds": 179.5,
+        "tokens": 47496,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "17698 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": true,
+          "evidence": "docx present"
+        },
+        {
+          "text": "Markdown body is primarily in German",
+          "passed": true,
+          "evidence": "190 German markers detected"
+        },
+        {
+          "text": "Contains a section with likely interview questions",
+          "passed": true,
+          "evidence": "matched 'Wahrscheinliche Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights",
+          "passed": true,
+          "evidence": "matched 'Highlights'"
+        },
+        {
+          "text": "Contains a section with questions to ask the company",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions",
+          "passed": true,
+          "evidence": "14 'F:' markers"
+        },
+        {
+          "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+          "passed": true,
+          "evidence": "14 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+          "passed": true,
+          "evidence": "clean"
+        },
+        {
+          "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn'",
+          "passed": true,
+          "evidence": "DB Systel mentioned 2x; IT-Partner=True; wrong-framing=False"
+        },
+        {
+          "text": "Honestly addresses the senior-consultant experience gap",
+          "passed": false,
+          "evidence": "no consulting-gap framing found"
+        },
+        {
+          "text": "Section 4 contains questions referencing QAS Company AG specifically",
+          "passed": true,
+          "evidence": "found 'QAS'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8462,
+        "passed": 11,
+        "failed": 2,
+        "total": 13,
+        "time_seconds": 219.0,
+        "tokens": 41830,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "25054 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": false,
+          "evidence": "no .docx found"
+        },
+        {
+          "text": "Markdown body is primarily in German (contains typical German words like 'Frage', 'Antwort', 'Unternehmen')",
+          "passed": true,
+          "evidence": "139 German markers detected"
+        },
+        {
+          "text": "Contains a section header matching 'Wahrscheinliche Fragen' or equivalent (Frage/F:)",
+          "passed": true,
+          "evidence": "matched 'Wahrscheinliche Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks (L\u00fccken/Risiken/Schw\u00e4chen)",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights (Highlights/Gespr\u00e4chs-/St\u00e4rken)",
+          "passed": true,
+          "evidence": "matched 'Gespr\\u00e4chs'"
+        },
+        {
+          "text": "Contains a section with questions to ask the company (Fragen an das Unternehmen/R\u00fcckfragen)",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions are listed",
+          "passed": true,
+          "evidence": "0 F-markers, 20 '?' line endings"
+        },
+        {
+          "text": "Q&A entries follow the skill's F:/A-Skizze:/Verbindung: pattern (at least 5 entries conform)",
+          "passed": false,
+          "evidence": "0 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not use 'konzernweit'/'unternehmensweit' language for Lutz's ISMS scope",
+          "passed": true,
+          "evidence": "clean"
+        },
+        {
+          "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn' (not Infrastrukturdienstleister)",
+          "passed": true,
+          "evidence": "DB Systel mentioned 4x; IT-Partner=True; wrong-framing=False"
+        },
+        {
+          "text": "Content is tailored to SIEM role (mentions SIEM, Use Cases, Alerting, SOC, or similar role-specific terms)",
+          "passed": true,
+          "evidence": "4/6 SIEM terms"
+        },
+        {
+          "text": "Section 4 contains questions that reference the specific company/role (not generic)",
+          "passed": true,
+          "evidence": "found 'dwpbank'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6923,
+        "passed": 9,
+        "failed": 4,
+        "total": 13,
+        "time_seconds": 210.7,
+        "tokens": 54225,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "21434 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": false,
+          "evidence": "no .docx found"
+        },
+        {
+          "text": "Markdown body is primarily in German",
+          "passed": true,
+          "evidence": "107 German markers detected"
+        },
+        {
+          "text": "Contains a section with likely interview questions",
+          "passed": true,
+          "evidence": "matched '## .*Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights",
+          "passed": false,
+          "evidence": "none of ['Highlights', 'St\\\\u00e4rken', 'Gespr\\\\u00e4chs', 'Cheatsheet', 'Cheat Sheet'] found"
+        },
+        {
+          "text": "Contains a section with questions to ask the company",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions",
+          "passed": true,
+          "evidence": "0 F-markers, 12 '?' line endings"
+        },
+        {
+          "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+          "passed": false,
+          "evidence": "0 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+          "passed": false,
+          "evidence": "1 claim(s): ['- **Situation**: konzernweiter ISMS-Rollout, drei produktive Anwendungen, begren']"
+        },
+        {
+          "text": "Honestly addresses the gap that Lutz has no prior consulting experience",
+          "passed": true,
+          "evidence": "cues: ['Beratungserfahrung', 'Inhouse', 'inhouse']"
+        },
+        {
+          "text": "Mentions at least one financial-services regulation/framework (DORA, BAIT, MaRisk, NIS-2)",
+          "passed": true,
+          "evidence": "found: ['DORA', 'BAIT', 'MaRisk', 'NIS2']"
+        },
+        {
+          "text": "Section 4 contains questions referencing KPMG specifically",
+          "passed": true,
+          "evidence": "found 'KPMG'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6923,
+        "passed": 9,
+        "failed": 4,
+        "total": 13,
+        "time_seconds": 168.9,
+        "tokens": 39327,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output directory contains an interview-prep .md file",
+          "passed": true,
+          "evidence": "17243 chars of markdown"
+        },
+        {
+          "text": "Output directory contains an interview-prep .docx file",
+          "passed": false,
+          "evidence": "no .docx found"
+        },
+        {
+          "text": "Markdown body is primarily in German",
+          "passed": true,
+          "evidence": "110 German markers detected"
+        },
+        {
+          "text": "Contains a section with likely interview questions",
+          "passed": true,
+          "evidence": "matched '## .*Fragen'"
+        },
+        {
+          "text": "Contains a section addressing gaps/risks",
+          "passed": true,
+          "evidence": "matched 'L\\u00fccken'"
+        },
+        {
+          "text": "Contains a section with talking points/highlights",
+          "passed": true,
+          "evidence": "matched 'Gespr\\u00e4chs'"
+        },
+        {
+          "text": "Contains a section with questions to ask the company",
+          "passed": true,
+          "evidence": "matched 'Fragen an'"
+        },
+        {
+          "text": "At least 10 distinct interview questions",
+          "passed": true,
+          "evidence": "0 F-markers, 16 '?' line endings"
+        },
+        {
+          "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+          "passed": false,
+          "evidence": "0 full F/A-Skizze/Verbindung triples"
+        },
+        {
+          "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+          "passed": false,
+          "evidence": "2 claim(s): ['- Task: Eigenverantwortliche Umsetzung des konzernweiten ISMS-Rollouts, ohne ext', 'Wer im Beratungskontext behauptet, bei DB die \"konzernweiten Richtlinien\" gemach']"
+        },
+        {
+          "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn'",
+          "passed": false,
+          "evidence": "DB Systel mentioned 3x; IT-Partner=True; wrong-framing=True"
+        },
+        {
+          "text": "Honestly addresses the senior-consultant experience gap",
+          "passed": true,
+          "evidence": "cues: ['Inhouse']"
+        },
+        {
+          "text": "Section 4 contains questions referencing QAS Company AG specifically",
+          "passed": true,
+          "evidence": "found 'QAS'"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9231,
+        "stddev": 0.0,
+        "min": 0.9231,
+        "max": 0.9231
+      },
+      "time_seconds": {
+        "mean": 178.6333,
+        "stddev": 1.4154,
+        "min": 177.0,
+        "max": 179.5
+      },
+      "tokens": {
+        "mean": 50065.6667,
+        "stddev": 3279.9513,
+        "min": 47496,
+        "max": 53760
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.7436,
+        "stddev": 0.0889,
+        "min": 0.6923,
+        "max": 0.8462
+      },
+      "time_seconds": {
+        "mean": 199.5333,
+        "stddev": 26.8519,
+        "min": 168.9,
+        "max": 219.0
+      },
+      "tokens": {
+        "mean": 45127.3333,
+        "stddev": 7977.5878,
+        "min": 39327,
+        "max": 54225
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.18",
+      "time_seconds": "-20.9",
+      "tokens": "+4938"
+    }
+  },
+  "notes": []
+}

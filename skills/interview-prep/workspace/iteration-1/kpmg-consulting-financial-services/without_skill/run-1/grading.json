@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.6923,
+    "passed": 9,
+    "failed": 4,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "21434 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": false,
+      "evidence": "no .docx found"
+    },
+    {
+      "text": "Markdown body is primarily in German",
+      "passed": true,
+      "evidence": "107 German markers detected"
+    },
+    {
+      "text": "Contains a section with likely interview questions",
+      "passed": true,
+      "evidence": "matched '## .*Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights",
+      "passed": false,
+      "evidence": "none of ['Highlights', 'St\\\\u00e4rken', 'Gespr\\\\u00e4chs', 'Cheatsheet', 'Cheat Sheet'] found"
+    },
+    {
+      "text": "Contains a section with questions to ask the company",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions",
+      "passed": true,
+      "evidence": "0 F-markers, 12 '?' line endings"
+    },
+    {
+      "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+      "passed": false,
+      "evidence": "0 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+      "passed": false,
+      "evidence": "1 claim(s): ['- **Situation**: konzernweiter ISMS-Rollout, drei produktive Anwendungen, begren']"
+    },
+    {
+      "text": "Honestly addresses the gap that Lutz has no prior consulting experience",
+      "passed": true,
+      "evidence": "cues: ['Beratungserfahrung', 'Inhouse', 'inhouse']"
+    },
+    {
+      "text": "Mentions at least one financial-services regulation/framework (DORA, BAIT, MaRisk, NIS-2)",
+      "passed": true,
+      "evidence": "found: ['DORA', 'BAIT', 'MaRisk', 'NIS2']"
+    },
+    {
+      "text": "Section 4 contains questions referencing KPMG specifically",
+      "passed": true,
+      "evidence": "found 'KPMG'"
+    }
+  ]
+}

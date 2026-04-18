@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.6923,
+    "passed": 9,
+    "failed": 4,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "17243 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": false,
+      "evidence": "no .docx found"
+    },
+    {
+      "text": "Markdown body is primarily in German",
+      "passed": true,
+      "evidence": "110 German markers detected"
+    },
+    {
+      "text": "Contains a section with likely interview questions",
+      "passed": true,
+      "evidence": "matched '## .*Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights",
+      "passed": true,
+      "evidence": "matched 'Gespr\\u00e4chs'"
+    },
+    {
+      "text": "Contains a section with questions to ask the company",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions",
+      "passed": true,
+      "evidence": "0 F-markers, 16 '?' line endings"
+    },
+    {
+      "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)",
+      "passed": false,
+      "evidence": "0 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz",
+      "passed": false,
+      "evidence": "2 claim(s): ['- Task: Eigenverantwortliche Umsetzung des konzernweiten ISMS-Rollouts, ohne ext', 'Wer im Beratungskontext behauptet, bei DB die \"konzernweiten Richtlinien\" gemach']"
+    },
+    {
+      "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn'",
+      "passed": false,
+      "evidence": "DB Systel mentioned 3x; IT-Partner=True; wrong-framing=True"
+    },
+    {
+      "text": "Honestly addresses the senior-consultant experience gap",
+      "passed": true,
+      "evidence": "cues: ['Inhouse']"
+    },
+    {
+      "text": "Section 4 contains questions referencing QAS Company AG specifically",
+      "passed": true,
+      "evidence": "found 'QAS'"
+    }
+  ]
+}

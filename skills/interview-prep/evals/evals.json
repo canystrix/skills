@@ -1,0 +1,26 @@
+{
+  "skill_name": "interview-prep",
+  "evals": [
+    {
+      "id": 1,
+      "name": "dwp-bank-siem-expert",
+      "prompt": "Ich habe n\u00e4chste Woche ein Vorstellungsgespr\u00e4ch bei der Deutschen WertpapierService Bank (dwp-bank) f\u00fcr die Stelle 'Experte Informationssicherheit mit Schwerpunkt SIEM'. Kannst du mir die Interview-Vorbereitung schreiben? Die Unterlagen liegen in /Users/canystrix/dev/job-applications/dwp-bank/.",
+      "expected_output": "An interview-prep-dwp-bank.md and interview-prep-dwp-bank.docx file in /Users/canystrix/dev/job-applications/dwp-bank/ with all four sections in German, SIEM-specific technical questions, gaps that honestly address the lack of direct SIEM tool experience in Lutz's CV, and company-specific questions about dwp-bank.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "kpmg-consulting-financial-services",
+      "prompt": "Bitte bereite mich auf das Bewerbungsgespr\u00e4ch bei KPMG f\u00fcr die Rolle 'Senior Consultant Cyber Security Financial Services' vor. Application folder: /Users/canystrix/dev/job-applications/kpmg/.",
+      "expected_output": "interview-prep-kpmg.md and .docx covering consulting-specific questions (Kundenkommunikation, Projektakquise), financial-services regulatory knowledge (BAIT, MaRisk, DORA), honest acknowledgment that Lutz has no prior consulting experience, and KPMG-specific questions.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "qas-company-ag-senior-consultant",
+      "prompt": "Interview prep for the Senior Consultant Informationssicherheit role at QAS Company AG please \u2014 folder is /Users/canystrix/dev/job-applications/qas-company-ag/. Nur die PDF liegt vor, keine markdown-Version des Anschreibens.",
+      "expected_output": "interview-prep-qas-company-ag.md and .docx. Skill should handle the PDF-only Anschreiben by extracting with pdfplumber. Content should focus on senior consulting readiness, ISMS depth, and QAS-specific research questions.",
+      "files": []
+    }
+  ]
+}

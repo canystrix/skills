@@ -1,0 +1,20 @@
+{
+  "eval_id": 3,
+  "eval_name": "qas-company-ag-senior-consultant",
+  "prompt": "Interview prep for the Senior Consultant Informationssicherheit role at QAS Company AG please \u2014 folder is /Users/canystrix/dev/job-applications/qas-company-ag/. Nur die PDF liegt vor, keine markdown-Version des Anschreibens.",
+  "assertions": [
+    {"id": "has_md", "text": "Output directory contains an interview-prep .md file"},
+    {"id": "has_docx", "text": "Output directory contains an interview-prep .docx file"},
+    {"id": "is_german", "text": "Markdown body is primarily in German"},
+    {"id": "section_fragen", "text": "Contains a section with likely interview questions"},
+    {"id": "section_luecken", "text": "Contains a section addressing gaps/risks"},
+    {"id": "section_highlights", "text": "Contains a section with talking points/highlights"},
+    {"id": "section_fragen_an", "text": "Contains a section with questions to ask the company"},
+    {"id": "qa_count", "text": "At least 10 distinct interview questions"},
+    {"id": "qa_format", "text": "Q&A entries follow F:/A-Skizze:/Verbindung: pattern (at least 5 entries)"},
+    {"id": "no_konzernweit", "text": "Does not claim corporate-wide/konzernweit ISMS scope for Lutz"},
+    {"id": "db_systel_correct", "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn'"},
+    {"id": "consulting_gap_honest", "text": "Honestly addresses the senior-consultant experience gap"},
+    {"id": "company_specific_questions", "text": "Section 4 contains questions referencing QAS Company AG specifically"}
+  ]
+}

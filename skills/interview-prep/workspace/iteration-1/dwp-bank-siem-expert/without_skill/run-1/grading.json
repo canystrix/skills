@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.8462,
+    "passed": 11,
+    "failed": 2,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "25054 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": false,
+      "evidence": "no .docx found"
+    },
+    {
+      "text": "Markdown body is primarily in German (contains typical German words like 'Frage', 'Antwort', 'Unternehmen')",
+      "passed": true,
+      "evidence": "139 German markers detected"
+    },
+    {
+      "text": "Contains a section header matching 'Wahrscheinliche Fragen' or equivalent (Frage/F:)",
+      "passed": true,
+      "evidence": "matched 'Wahrscheinliche Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks (Lücken/Risiken/Schwächen)",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights (Highlights/Gesprächs-/Stärken)",
+      "passed": true,
+      "evidence": "matched 'Gespr\\u00e4chs'"
+    },
+    {
+      "text": "Contains a section with questions to ask the company (Fragen an das Unternehmen/Rückfragen)",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions are listed",
+      "passed": true,
+      "evidence": "0 F-markers, 20 '?' line endings"
+    },
+    {
+      "text": "Q&A entries follow the skill's F:/A-Skizze:/Verbindung: pattern (at least 5 entries conform)",
+      "passed": false,
+      "evidence": "0 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not use 'konzernweit'/'unternehmensweit' language for Lutz's ISMS scope",
+      "passed": true,
+      "evidence": "clean"
+    },
+    {
+      "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn' (not Infrastrukturdienstleister)",
+      "passed": true,
+      "evidence": "DB Systel mentioned 4x; IT-Partner=True; wrong-framing=False"
+    },
+    {
+      "text": "Content is tailored to SIEM role (mentions SIEM, Use Cases, Alerting, SOC, or similar role-specific terms)",
+      "passed": true,
+      "evidence": "4/6 SIEM terms"
+    },
+    {
+      "text": "Section 4 contains questions that reference the specific company/role (not generic)",
+      "passed": true,
+      "evidence": "found 'dwpbank'"
+    }
+  ]
+}

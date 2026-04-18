@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "pass_rate": 0.9231,
+    "passed": 12,
+    "failed": 1,
+    "total": 13
+  },
+  "expectations": [
+    {
+      "text": "Output directory contains an interview-prep .md file",
+      "passed": true,
+      "evidence": "18687 chars of markdown"
+    },
+    {
+      "text": "Output directory contains an interview-prep .docx file",
+      "passed": true,
+      "evidence": "docx present"
+    },
+    {
+      "text": "Markdown body is primarily in German (contains typical German words like 'Frage', 'Antwort', 'Unternehmen')",
+      "passed": true,
+      "evidence": "192 German markers detected"
+    },
+    {
+      "text": "Contains a section header matching 'Wahrscheinliche Fragen' or equivalent (Frage/F:)",
+      "passed": true,
+      "evidence": "matched 'Wahrscheinliche Fragen'"
+    },
+    {
+      "text": "Contains a section addressing gaps/risks (Lücken/Risiken/Schwächen)",
+      "passed": true,
+      "evidence": "matched 'L\\u00fccken'"
+    },
+    {
+      "text": "Contains a section with talking points/highlights (Highlights/Gesprächs-/Stärken)",
+      "passed": true,
+      "evidence": "matched 'Highlights'"
+    },
+    {
+      "text": "Contains a section with questions to ask the company (Fragen an das Unternehmen/Rückfragen)",
+      "passed": true,
+      "evidence": "matched 'Fragen an'"
+    },
+    {
+      "text": "At least 10 distinct interview questions are listed",
+      "passed": true,
+      "evidence": "14 'F:' markers"
+    },
+    {
+      "text": "Q&A entries follow the skill's F:/A-Skizze:/Verbindung: pattern (at least 5 entries conform)",
+      "passed": true,
+      "evidence": "14 full F/A-Skizze/Verbindung triples"
+    },
+    {
+      "text": "Does not use 'konzernweit'/'unternehmensweit' language for Lutz's ISMS scope",
+      "passed": false,
+      "evidence": "1 claim(s): ['Als Language Data Engineer bei der Deutschen Bahn habe ich zwei konzernweite Anw']"
+    },
+    {
+      "text": "If DB Systel is mentioned, framed as 'IT-Partner der Deutschen Bahn' (not Infrastrukturdienstleister)",
+      "passed": true,
+      "evidence": "DB Systel mentioned 4x; IT-Partner=True; wrong-framing=False"
+    },
+    {
+      "text": "Content is tailored to SIEM role (mentions SIEM, Use Cases, Alerting, SOC, or similar role-specific terms)",
+      "passed": true,
+      "evidence": "4/6 SIEM terms"
+    },
+    {
+      "text": "Section 4 contains questions that reference the specific company/role (not generic)",
+      "passed": true,
+      "evidence": "found 'dwpbank'"
+    }
+  ]
+}
