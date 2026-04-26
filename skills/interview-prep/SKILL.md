@@ -60,14 +60,72 @@ Before writing, produce a short internal mapping (it's fine to show this to the 
 - **Gaps** — requirements not covered, or only weakly covered, by Lutz's profile. These are the risks to address in section 2.
 - **Company tone** — formal/traditional vs. modern/casual (inferred from how the posting is written). Adjust formality of the prep language accordingly; the whole output stays in German.
 
-**Factual constraints — identical to the cover-letter skill:**
+**Factual constraints — apply to every Q&A sketch, risk framing, highlight bullet, and company question in this document.**
 
-- **ISMS scope is team- and application-level, never corporate-wide.** Lutz does Schutzbedarfsanalysen, Risikobehandlung, and Risikobeurteilung for the applications and assets in his team's responsibility. He does not author or own corporate-wide IS policies. This constraint applies to every sentence you write — including Q&A answer sketches, highlights, and framing suggestions.
-  - Never write: "konzernweiter ISMS-Kontext", "konzernweite Richtlinien", "konzernweites ISMS", "unternehmensweite Sicherheitsrichtlinien", "verantworte konzernweit". The word *konzernweit* may appear only when Lutz is explicitly disclaiming that scope ("nicht konzernweit", "keine konzernweite Richtlinienautorenschaft").
-  - Write instead: "Anwendungen und Assets in meinem Verantwortungsbereich", "im Rahmen des ISMS meines Teams", "anwendungsbezogen", "auf Team-Ebene".
-- DB Systel is always identified as "DB Systel GmbH, dem IT-Partner der Deutschen Bahn" — never "Infrastrukturdienstleister" or just "Deutsche Bahn".
-- Current role (02/2026–present): combined Information Security Manager + Language Data Engineer at DB Systel. ISMS work at DB/DB Systel began March 2023.
-- Do not invent qualifications, certifications, or experiences that aren't in the CV/cover letter. If the vacancy asks for something Lutz doesn't have, treat it as a gap (section 2) — don't manufacture coverage.
+These constraints mirror the `/cover-letter` skill. Treat every sentence in every section as a claim that must map to the profile below. If you cannot point to the exact CV entry, certification, or experience item that backs a phrase, rewrite it. When in doubt, acknowledge the gap (in Section 2 or directly in the A-Skizze) rather than soften a claim into dishonest territory.
+
+### Employer and timeline
+
+- **2023 start was at Deutsche Bahn AG, NOT at DB Systel.** Lutz began ISMS work in March 2023 at the DB AG inside the unit **Corporate Language Solutions (CLS)**. He moved to **DB Systel GmbH** only in February 2026.
+  - Q&A sketches must reflect this accurately. Typical interviewer questions like "Seit wann sind Sie im ISMS tätig?" or "Wie lange sind Sie schon bei DB Systel?" are landmines if the prep doc treats 2023 and DB Systel as the same.
+  - **Write:** "Seit 2023 im Information Security Management, zunächst bei der DB AG in der Einheit Corporate Language Solutions, seit Anfang 2026 bei DB Systel im Rahmen eines internen Wechsels."
+- **DB Systel identification.** Always: "DB Systel GmbH, dem IT-Partner der Deutschen Bahn" — not "Infrastrukturdienstleister" or just "Deutschen Bahn".
+
+### Role title and scope
+
+- **Lutz's official internal role title is "Sekundärassetverantwortlicher"**, a DB-konzerninterne Rollenbezeichnung. "Information Security Manager" is the functional/market-standard description used in CV and Anschreiben. In the interview, Lutz must be able to state this distinction if asked about his formal title. **Include this as a pre-baked Q&A in Section 1** whenever the vacancy is non-DB-familiar:
+  > *"Wie lautet Ihre offizielle Stellenbezeichnung?"* → *"Meine interne Bezeichnung bei DB ist Sekundärassetverantwortlicher. Das ist die DB-konzerninterne Rolle für die Informationssicherheit eines definierten Anwendungs-Assets — funktional entspricht das einem Information Security Manager mit anwendungsbezogenem Scope, analog zur Rollenlogik nach ISO/IEC 27001."*
+- **ISMS scope is team- and application-level, never corporate-wide.** Lutz is Sekundärassetverantwortlicher for three productive applications of his own team. He does NOT own corporate-wide policies, does NOT cover other teams/units, does NOT speak for the whole DB group.
+  - **Never write:** "konzernweiter ISMS-Kontext", "konzernweite Richtlinien", "konzernweites ISMS", "verantworte konzernweit"
+  - **Write instead:** "Anwendungen und Assets in meinem Verantwortungsbereich", "im Rahmen des ISMS meines Teams", "anwendungsbezogen", "auf Team-Ebene"
+- **The governance role belongs to the CLS unit, not to Lutz personally.** Do not attribute unit-level governance responsibility to Lutz.
+
+### Framework experience ladder
+
+Strict. Do not upgrade a framework into a higher tier in A-Skizzen, Highlights, or Framing-Vorschläge.
+
+| Framework | Tier | Allowed phrasing |
+|---|---|---|
+| ISO/IEC 27001 | **Operational** — daily work, PECB-certified | "Tagesgeschäft", "seit 2023 verantwortlich", "PECB-zertifiziert" |
+| BSI IT-Grundschutz | **Indirect** — only via the konzerninternes DB-Schema that is BSI-oriented | "im DB-Umfeld über ein am BSI-Schema orientiertes konzerninternes Modell", "konzeptionell bekannt" — NEVER "operativ" oder "fließt kontinuierlich ein" |
+| NIST (CSF / 800-53) | **Conceptual only** — no production use | "als Rahmen bekannt", "konzeptionell vertraut" — NEVER "operativ", "im Alltag" |
+| EU-DORA | **Conceptual only** | "als regulatorischer Rahmen bekannt", "konzeptionell abgedeckt" — NEVER "setze um" |
+| NIS2 | **Conceptual only** | "beobachte aktiv", "als Rahmen bekannt" — NEVER "fließt kontinuierlich ein" |
+
+**If the vacancy names a framework that falls into "Indirect" or "Conceptual only", automatically include in Section 1:**
+1. A question like *"Wo liegen Ihre Schwerpunkte bei [Framework X]?"* with an honest A-Skizze that downgrades to the correct tier.
+2. A **Kurzbriefing** sub-block directly below that A-Skizze with 3–6 bullets of factual background on the framework (scope, authority, pillars, key terms) so Lutz can use the vocabulary correctly in the interview without overclaiming experience.
+
+### Audit experience
+
+- **No external audit-Begleitung.** Lutz has never led or independently accompanied an external audit.
+- **Internal audit:** Teilnahme an einer internen Prüfung nach Abschluss des ISMS-Rollouts auf Reifegrad 3.
+- If the vacancy mentions "Begleitung interner und externer Audits", this is a Section-2 risk by default. A-Skizzen must not claim audit-Begleitung as existing experience.
+
+### Tools and systems
+
+- **No ServiceNow experience.** If the vacancy names it, include a ServiceNow Q in Section 1 with an honest A-Skizze ("produktiv noch nicht gearbeitet") plus a **Kurzbriefing** block (IRM modules, continuous compliance, integration with ITSM).
+- **DB-internal tools (SESAM, IRMA, …)** are DB-konzerninterne Systeme without public documentation. In Q&A sketches, describe them by function, not by name ("internes Risikomanagement-Tool", "zentrales Dokumentationssystem"). If Lutz would mention a DB-internal tool in a specific answer, add a side-note: "Achtung — außerhalb der DB-Welt unbekannt, Name nur in Kombination mit funktionaler Übersetzung nennen."
+
+### Awareness vs. Wissensvermittlung
+
+- **Lutz's Python/NLP training is Wissensvermittlung im eigenen Team, NOT Security Awareness.** A-Skizzen and Highlights must not frame Python/NLP training as security-awareness experience. If the vacancy asks for Awareness-Maßnahmen, the A-Skizze should build the bridge explicitly ("Der didaktische Ansatz ist übertragbar, Security-Awareness-Formate sind für mich der nächste Schritt") rather than conflating the two.
+
+### CLS transformation and BahnGPT / RAG context (the strongest AI-Governance anchor)
+
+- The CLS unit has shifted from pure translation/interpreting toward providing language-based knowledge infrastructure for the DB group. CLS's curated multilingual terminology database (with ontological relations) feeds downstream systems: the **Konzernregelwerksdatenbank**, Autorenunterstützungsprogramme, the group's **machine translation service**, and the **RAG layer of BahnGPT (DB's internal LLM)**.
+- Lutz's LDE role puts him at the **data layer of a productive enterprise AI system**. For vacancies touching AI, LLMs, data governance, or AI-security: surface this as a highlight and Q&A anchor. It is a genuine differentiator that most candidates in ISMS roles do not have.
+- **Caveat:** Do not describe BahnGPT architecture in detail — it's a DB-internal system and specifics are likely NDA. Stay at the functional level ("Terminologiedatenbank liefert Grounding-Daten für die interne RAG-Implementation").
+
+### Mirror Anschreiben overclaims into Section 2
+
+If the Anschreiben contains a framework/experience claim that the framework-ladder above would downgrade — for example "BSI IT-Grundschutz fließt kontinuierlich in meine Arbeit ein" while the ladder says BSI is indirect — then that claim MUST appear in Section 2 as a risk with a framing suggestion that lets Lutz reconcile the cover-letter tone with the truthful scope in the interview, WITHOUT openly disowning the Anschreiben.
+
+This is the rule that failed in the first run of this prep — A-Skizzen silently inherited cover-letter overclaims instead of catching them. Every Anschreiben claim must be cross-checked against the framework ladder, the audit rule, and the tools rule before writing A-Skizzen.
+
+### The no-fabrication rule
+
+If the vacancy asks for something not in the profile, acknowledge the gap in Section 2 and give an honest framing. Proactive gap-naming is a trust signal, not a weakness.
 
 ---
 
@@ -84,6 +142,13 @@ Produce 10–15 questions. Cover this mix:
 - **Motivations- und Fit-Fragen** — "Warum dieser Arbeitgeber?", "Warum jetzt ein Wechsel?", "Warum diese Rolle?"
 - **Schwierige Fragen** tied directly to the gaps identified in section 2. These are the ones Lutz most needs to rehearse.
 - **Karrierefragen** — "Wo sehen Sie sich in fünf Jahren?" — only if realistic for the role level.
+
+**Always include, regardless of role:**
+
+- A **Hintergrund / Karrierepfad** question ("Ihr Hintergrund ist ungewöhnlich — Übersetzer → Language Data Engineer → ISMS. Wie kam das?"). The A-Skizze should reflect Lutz's real narrative: translator as not-long-term; systematically took on PM/admin/Anwendungsverantwortung; LDE was a hoped-for engineering pivot that stayed niche; ISMS is the first field with a clear career path; systematic certification progression (PECB + CompTIA Sec+/Net+ + AZ-900; CISM + CISSP planned).
+- A **Language Data Engineer — what exactly?** question, because the dual title in the current role (ISM + LDE) almost always triggers it. The A-Skizze must include the CLS transformation from pure language service to knowledge infrastructure, the curated terminology database with ontological relations, and the downstream systems it feeds (Konzernregelwerksdatenbank, Autorenunterstützungsprogramme, MT, BahnGPT RAG). Framing: the LDE role puts Lutz at the data layer of a productive AI system — concrete, not theoretical.
+- The **official title clarification** (Sekundärassetverantwortlicher ↔ Information Security Manager) whenever the interviewer is unlikely to know DB-internal nomenclature.
+- A **Motivations- und Wechselfrage** that honestly reflects: scope expansion (currently only own-team apps), structural context at DB (Einstellungsstopp + Stellenabbau), LDE-niche plateau. Do NOT include missing-Gehaltserhöhung as the primary reason in the main A-Skizze — keep it as a *"Falls Nachfrage"* sub-block the interviewer can trigger, not volunteered upfront.
 
 Format each entry exactly like this:
 
@@ -130,12 +195,13 @@ Do not invent weaknesses. If the profile honestly covers a requirement, don't ma
 
 Source these from the cover-letter's differentiator paragraph and the strongest CV bullets. Typical highlights:
 
-- ISMS-Rollout für drei produktive Anwendungen eigenständig bis Reifegrad 3 gehoben — ohne externe Koordinationsunterstützung
-- Agentic AI in der Praxis: n8n-Automatisierungen im Arbeitsalltag + OpenClaw als privates Open-Source-Projekt; Verständnis für agentische Risiken (unkontrollierte Tool-Calls, Datenexfiltration, Prompt Injection)
-- Python- und NLP-Schulungen für Kolleg:innen — kann technische Themen anschlussfähig erklären
-- Duale Expertise: Sprachtechnologie/NLP + Informationssicherheit — selten und gerade für AI-Governance-nahe Rollen relevant
+- **ISMS-Rollout Reifegrad 3:** Drei produktive Anwendungen eigenverantwortlich bis Reifegrad 3 gehoben — ohne externe Koordinationsunterstützung, inklusive Schutzbedarfsanalyse, Risikobehandlung, revisionssicherer Nachweisdokumentation.
+- **AI-Datenebene + Agentic AI:** Über die LDE-Rolle operativer Kontakt mit der Datenebene eines produktiven AI-Systems — die CLS-Terminologiedatenbank liefert Grounding-Daten für die RAG-Implementation von BahnGPT (DB-interner LLM-Dienst) sowie die Konzernregelwerksdatenbank und Autorenunterstützungsprogramme. Ergänzend produktive n8n-Automatisierungen und OpenClaw als privates Open-Source-Agenten-Framework. Verständnis für agentische Risiken (unkontrollierte Tool-Calls, Datenabflüsse, Prompt Injection) und die AI-Datengovernance-Seite von innen. Für AI-Governance-nahe Rollen der stärkste Differentiator.
+- **Systematische Zertifizierungsdichte:** PECB ISO/IEC 27001 Implementer, CompTIA Security+ und Network+, Microsoft Azure Fundamentals — in zwei Jahren neben laufender ISMS-Verantwortung aufgebaut. CISM und CISSP als nächste Schritte geplant.
+- **Wissensvermittlung im Team:** Seit Anfang 2026 Python- und NLP-Schulungen für das eigene Team, Inhalte selbst konzipiert — belastbarer Beleg für didaktischen Ansatz. (Nicht als Security Awareness deklarieren.)
+- **Duale Expertise:** Sprachtechnologie/NLP + Informationssicherheit — selten und gerade für AI-Governance-nahe Rollen relevant.
 
-Pick what actually fits the role — don't include all four if only two match.
+Pick what actually fits the role — don't include all five if only two or three match. For AI/LLM/data-governance-adjacent roles, the AI-Datenebene-Highlight is almost always the right lead.
 
 ### Section 4 — Fragen an das Unternehmen & Recherche
 
@@ -243,5 +309,22 @@ Read the draft as if you were Lutz the night before the interview. Ask:
 - Are the risks honest, or am I inventing weaknesses that don't exist?
 - Do the company-side questions show that the vacancy was actually read?
 - Is the German natural and speakable, or does it sound like a written policy document?
+
+If any answer is "no", fix it before writing the files.
+
+### Factual pre-submit checklist
+
+Run this before generating the `.docx`. Every item must be clean.
+
+1. **Timeline:** Is the 2023 ISMS start correctly placed at DB AG / Corporate Language Solutions, and the DB-Systel move at February 2026? No A-Skizze should say "seit 2023 bei DB Systel".
+2. **Scope:** No sentence implies corporate-wide scope ("konzernweit", "unternehmensweite Richtlinien", "konzernweiter ISMS-Kontext") unless explicitly disclaiming it.
+3. **Frameworks:** Every mention of NIST, EU-DORA, NIS2, or BSI-Grundschutz sits at the correct ladder tier (Indirect / Conceptual only) — no phrase upgrades them to "operativ" or "im Alltag".
+4. **Audit:** No A-Skizze claims external audit-Begleitung. If audit is mentioned by the vacancy, the honest internal-audit framing is in place.
+5. **ServiceNow and DB-internal tools:** No claimed ServiceNow experience. SESAM / IRMA / other DB-internal tool names appear only with functional translation (or not at all).
+6. **Awareness:** Python/NLP training is framed as Wissensvermittlung, not Security Awareness — unless an explicit bridge is built.
+7. **Anschreiben-Spiegelung:** Every framework or experience claim in the Anschreiben that the framework-ladder would downgrade has been mirrored into Section 2 as a risk with framing-suggestion.
+8. **BahnGPT / RAG:** Functional-level description only, no architecture insider details.
+9. **Kurzbriefings present:** For every framework or tool the vacancy names that Lutz doesn't hold operationally, the corresponding Q in Section 1 has a Kurzbriefing sub-block.
+10. **Title clarification:** If the interviewer is unlikely to know DB-internal nomenclature, the Sekundärassetverantwortlicher-vs-Information-Security-Manager Q is present.
 
 If any answer is "no", fix it before writing the files.
