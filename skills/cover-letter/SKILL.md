@@ -86,7 +86,10 @@ Treat every sentence you write as a claim that must map to something in the prof
 #### Role title and scope
 
 - **Lutz's official internal role title is "Sekundärassetverantwortlicher"** — a DB-konzerninterne Rollenbezeichnung. "Information Security Manager" is the functional/market-standard translation used in CV and cover letter as a role description. Do not claim it is the official title if directly asked. In cover letters, treat "Information Security Manager" as a functional description, not a title claim.
-- **ISMS scope is team- and application-level.** Lutz is Sekundärassetverantwortlicher for three productive applications in his own team. He does NOT own corporate-wide policies, does NOT cover other teams/units, does NOT speak for the whole DB group.
+- **Lutz is an Information Security Manager *embedded in a Fachbereich* (Corporate Language Solutions, CLS), not part of a central CISO function.** This positioning is important: he is the ISM *within* a business unit, responsible for the security of that unit's applications. He is *not* a central security advisor speaking *to* Fachbereiche from outside.
+  - **Write:** "Information Security Manager im Fachbereich Corporate Language Solutions", "ISM auf Anwendungsebene innerhalb der CLS-Einheit"
+  - **Never write:** anything that implies central-CISO scope or cross-Fachbereich advisory authority
+- **ISMS scope is team- and application-level.** Lutz is Sekundärassetverantwortlicher for the productive applications in his own team. He does NOT own corporate-wide policies, does NOT cover other teams/units, does NOT speak for the whole DB group.
   - **Never write:** "konzernweite Richtlinien", "unternehmensweite Sicherheitsrichtlinien", "konzernweites ISMS verantworten", "konzernweit"
   - **Write instead:** "für die Anwendungen und Assets in meinem Verantwortungsbereich", "im Rahmen des ISMS meines Teams", "anwendungsbezogen", "auf Team-Ebene"
 - **The governance role belongs to the unit (Corporate Language Solutions), not to Lutz personally.** CLS covers governance for language- and terminology-related applications group-wide. Lutz's role within CLS is Sekundärassetverantwortlicher for a subset of those applications. Do not conflate.
@@ -106,12 +109,76 @@ This ladder is strict. Do not upgrade a framework into a higher tier than it bel
 
 If the vacancy asks for operational experience in a framework that falls into "Indirect" or "Conceptual only", acknowledge the gap ("konzeptionell vertraut, federführende Umsetzung kommt bei CANCOM/…") rather than bridging with weasel words that imply more than is true.
 
+**Important — BSI IT-Grundschutz and NIS2 should be present in the Anschreiben and CV when role-relevant.** The "Indirect" and "Conceptual only" tiers do *not* mean *„remove from the document"*; they mean *„use the tier-correct phrasing"*. For regulated finance, KRITIS-adjacent, public-sector, or other role contexts where these frameworks are part of the operating environment, omitting them altogether weakens the application unnecessarily.
+
+- **BSI IT-Grundschutz** is part of Lutz's working vocabulary via the konzerninternes DB-Schema (BSI-orientiert). Mention it at the *„im DB-Umfeld über ein am BSI-Schema orientiertes konzerninternes Modell präsent"* / *„konzeptionell bekannt"* tier — it shows that he speaks the BSI language and can read Bausteine, even if no federführende Grundschutz-Projekterfahrung exists yet.
+- **NIS2** belongs in the regulatorisch-aware vocabulary. Mention it as *„als regulatorischer Rahmen aktiv beobachtet"* / *„konzeptionell abgedeckt"* — signals awareness of the directive without overclaiming productive Umsetzungserfahrung.
+
+The rule is: **mention at the correct tier, do not omit defensively, do not upgrade the tier**. The phrasing in the ladder above is the green-light language for these frameworks.
+
+#### Practice claim discipline (universal rule)
+
+The framework ladder above is one application of a more general principle: **every concrete practice claim must survive a 5-minute focused drill from a sharp interviewer.** The drill is a three-step probe: *„Was genau?"* → *„Wie viele / wie oft?"* → *„Produktiv oder Sandbox / Eigenanteil oder Beitrag?"*. If at any step the wording breaks because the actual scope is narrower than implied, the wording is too broad and must be rewritten before submission.
+
+Apply the drill explicitly to the four high-risk claim families below. These have produced concrete Anschreiben failures before — they must not slip past again.
+
+##### Agentic AI / n8n / OpenClaw — work vs. private split
+
+This is **the** rule that produced the dwpbank Anschreiben failure. Read carefully.
+
+**At work, do not mention n8n or agentic AI at all.** Both are off-limits for any work-related claim:
+- No *„produktiv mit n8n"*, no *„agentenbasierte Automatisierung"*, no *„AI-Agent-Knoten"*, no work-context claim that names n8n specifically or agentic-AI as a work tool.
+- **What CAN be mentioned at work:** *„Workflow-Automation"* in generic terms, when relevant — e.g. *„meine Tätigkeit umfasst Workflow-Automatisierung im LDE-Kontext"*. No tool name attached.
+
+**Agentic AI and OpenClaw belong in the private-interest section only**, and only when role-relevant:
+- **OpenClaw** — Lutz is contributor (Peter Steinberger is the creator). Mention as: *„im Privaten Contributor bei OpenClaw, einem Open-Source-Agenten-Framework von Peter Steinberger"*.
+- **Agentic AI in general** — frame as private interest plus risk-awareness, not work practice: *„privat verfolge ich agentische AI-Architekturen und ihre Risiken (OWASP LLM Top 10)"*.
+- Surface this private-interest paragraph **only when the role touches AI, LLM-security, or agentic-system risk**. For unrelated roles (pure ISMS, pure SIEM ops, pure GRC), leave it out.
+
+**Never write — even if the underlying activity is real:**
+- *„produktiv mit agentenbasierter Automatisierung"*
+- *„nutze n8n bei der DB"* / *„im Konzern setze ich n8n ein"*
+- *„mein Open-Source-Agenten-Framework"* (authorship implication)
+- *„ich habe entwickelt"* in conjunction with OpenClaw
+- Any wording that places OpenClaw or agentic AI in the work context
+
+**Write instead — when role-relevant:**
+- *„Beruflich mit Workflow-Automation befasst; privat Contributor bei OpenClaw, einem Open-Source-Agenten-Framework von Peter Steinberger, mit Fokus auf den Risiken agentischer Systeme nach OWASP LLM Top 10."*
+
+If the role does not touch AI/LLM/agentic, the entire topic stays out of the Anschreiben — not as a defensive omission, but because it isn't relevant.
+
+##### Advisory scope
+
+- **Lutz advises within his SAV scope: PAVs of his applications (typically in different Fachbereichen) and the platform/operations team.** He does NOT advise corporate Fachbereiche bank- or group-wide.
+- The vacancy phrase *„Fachbereiche beraten"* often implies cross-organizational advisory at corporate scale (Treasury, Risk, Compliance, etc.). Plain mirroring of this phrase in the Anschreiben overscopes Lutz's reality.
+  - **Never write:** plain "Fachbereiche beraten" or "Beratung der Fachbereiche" without scope qualification
+  - **Write instead:** "Beratung der Primärassetverantwortlichen meiner Anwendungen — die in unterschiedlichen Fachbereichen sitzen — sowie des Plattform-Teams in sicherheitsrelevanten Fragen", or "Beratung der Asset-Owner und Plattform-Teams im Verantwortungsbereich"
+- The PAV-advisory angle is methodisch real and defensible (risk acceptance, Schutzbedarf, Restrisiko-Aufklärung). Use it, but scope it.
+
+##### BCM / Notfallplanung
+
+- **Lutz's applications are NOT KRITIS-relevant and NOT BCM-relevant in the enterprise sense (BSI 200-4 / ISO 22301).** They are corporate language-service tools — failure causes business inconvenience, not safety or regulatory incidents.
+- What Lutz actually does: **Asset-level Notfallkonzepte gemäß ISO 27001 Annex A 5.30** — Wiederanlauf, Backup-Konzept, Eskalations- und Kontaktpfade, Notbetriebs-Verfahren. RTOs typischerweise im Tagesbereich.
+  - **Never write:** "Verantwortung für Business Continuity Management", "BCM-relevante Maßnahmen", "Notfallplanung für KRITIS-Systeme", "Disaster Recovery für geschäftskritische Anwendungen"
+  - **Write instead:** "Erstellung und Pflege von Notfallkonzepten auf Anwendungsebene gemäß ISO 27001 Annex A 5.30 — Wiederanlauf, Backup-Konzept, Eskalationswege"
+- If the vacancy explicitly demands BCM ownership (KRITIS bank, regulated finance), this becomes a Section-2 risk in the prep doc, not a claimed competence.
+
+##### Authorship vs. contribution
+
+For every project, system, or framework Lutz didn't build alone, state the role accurately:
+- **Contributor / Beiträger** — code, docs, ideas added to someone else's project (OpenClaw)
+- **Anwendungsverantwortlicher / Operator** — runs an existing system in production (BahnGPT consumer, the four CLS apps)
+- **Author / Architect** — designed and built (the in-house CLS Eigenentwicklung; n8n workflows he personally built)
+
+Never let the wording imply authorship where the role is contribution or operation.
+
 #### Audit experience
 
-- **No external audit-Begleitung.** Lutz has never led or independently accompanied an external audit.
-- **Internal audit:** Teilnahme an einer internen Prüfung nach Abschluss des ISMS-Rollouts auf Reifegrad 3.
-- **Never write:** "habe mehrere Audits begleitet", "Audit-Begleitung gehört zu meinem Alltag", "externe Auditverantwortung"
-- **Write instead (if audit topic is relevant):** "Die Arbeitsweise, die ein Audit gelingen lässt — laufend revisionssichere Dokumentation, nachvollziehbare Risikobehandlung — bringe ich mit. Produktive Audit-Begleitung sehe ich als Aufgabe der Rolle, nicht als vorhandene Erfahrung."
+- **Lutz has not undergone any audits — neither internal nor external.** Do not claim audit participation in any form.
+- **What he has built is audit-readiness, not audit experience.** The applications and documentation in his Verantwortungsbereich are maintained at audit-ready state — laufend revisionssichere Dokumentation, nachvollziehbare Risikobehandlung, geprüfte Maßnahmenwirksamkeit — but no audit (internal or external) has actually been conducted on them with his participation.
+- **Never write:** "habe Audits begleitet", "Audit-Begleitung gehört zu meinem Alltag", "Teilnahme an internen Prüfungen", "externe Auditverantwortung"
+- **Write instead (if audit topic is relevant):** "Audit-Readiness ist Tagesgeschäft — die Anwendungen in meinem Verantwortungsbereich sind durchgängig auf Audit-Niveau dokumentiert: revisionssichere Nachweisführung, nachvollziehbare Risikobehandlung, belegbare Maßnahmenwirksamkeit. Die Begleitung eines tatsächlichen Audits sehe ich als Aufgabe der nächsten Rolle, nicht als vorhandene Erfahrung."
+- This distinction matters: Audit-Readiness is a *state of preparedness* (real, ongoing); Audit-Begleitung is an *event-driven process* (not yet experienced).
 
 #### Tools and systems
 
@@ -143,8 +210,17 @@ Before you finalise the letter, read it top to bottom with this checklist in han
 5. Is "Awareness" used in a way that implies security-awareness experience? Rewrite or soften.
 6. Is there any mention of external audit-Begleitung as existing experience? Remove.
 7. Does every concrete claim (framework, tool, activity) map to a specific item in the profile below? If not — remove or soften.
+8. **5-minute drill test for every concrete practice claim.** For each tool/activity/scope claim, simulate the three-step probe: *„Was genau?"* → *„Wie viele / wie oft?"* → *„Produktiv oder Sandbox / Eigenanteil oder Beitrag?"*. If any step would expose a narrower reality than the wording suggests — rewrite. Apply especially to:
+   - n8n / agentic-AI at work — **forbidden**. n8n must not appear in any work claim; agentic AI must not be framed as a work activity. If these appear in the work context, remove.
+   - OpenClaw / agentic AI in the private-interest section — only if role-relevant; OpenClaw is contributor (never author).
+   - "Fachbereiche beraten" or similar (PAV-Scope vs. corporate-wide)
+   - BCM / Notfallplanung (Annex A 5.30 Asset-Level vs. enterprise-BCM)
+   - Audit claims — only Audit-Readiness, never Audit-Begleitung
+   - Authorship vs. contribution / operation across all named systems
 
 Only if every answer is clean, generate the .docx and .md.
+
+> **Rule of thumb after the dwpbank Anschreiben experience (April 2026):** the cover letter is a contract for the interview. Every sentence becomes a claim Lutz must defend in person. If a sentence cannot survive a 5-minute drill, it does not belong in the Anschreiben — even when the underlying activity is real, just narrower than the wording.
 
 ---
 
@@ -254,17 +330,18 @@ Use this as the authoritative source. Do not draw on information outside this pr
 - Responsible for ISMS processes (Schutzbedarfsanalysen, Risikobehandlung, Compliance-Dokumentation) for the applications and assets in his team's area of responsibility, per ISO/IEC 27001
 - Risk assessment and coordination of measures with stakeholders and the central CISO team
 - Reclassification and update of applications within cross-team governance processes
-- Builds and operates agentic automation workflows (n8n, OpenClaw — self-hosted Docker-based agentic AI stack)
+- **At work:** workflow-automation tasks in the LDE context (no specific tool name to be mentioned in cover letters — n8n is off-limits as a work claim).
+- **Privately:** contributor to OpenClaw, an open-source agentic-AI framework created by Peter Steinberger. Surfaces as a CV/Anschreiben item only when the role touches AI, LLM security, or agentic-system risk.
 - Delivers Python and NLP training to colleagues — independently designed and delivered (Wissensvermittlung, not security awareness)
 
 ### Previous Role (03/2023 – 01/2026)
 **Information Security Manager (ISMS) / Sekundärassetverantwortlicher** at Deutsche Bahn AG, Frankfurt am Main — within the unit **Corporate Language Solutions (CLS)**
 - CLS is a DB-AG-unit with a group-wide governance role for language- and terminology-related applications. Lutz's role inside CLS is application-scoped, not unit-scoped.
-- Independently rolled out ISMS for three production applications of his own team — reached maturity level 3 without external coordination support
+- Independently rolled out ISMS for **four production applications** of his own team — reached maturity level 3 without external coordination support. (Note: two of the four are grouped as a single asset for internal SAV-administration purposes. In external materials — Anschreiben, CV, interview prep — always count as four; the internal grouping is an accounting convenience, not a real reduction of scope.)
 - Conducted Schutzbedarfsanalysen and risk assessments; derived and implemented technical and organisational measures
 - Created audit-ready evidence documentation and prepared governance reviews
-- Participated in one internal audit after Reifegrad 3 was reached. No external audit-Begleitung.
-- Implemented access concepts, emergency planning, and security measures in live operations
+- **No audit participation (internal or external).** Applications are maintained in an audit-ready state — but no audit has yet been conducted on them with Lutz's involvement.
+- Implemented access concepts, Notfallkonzepte (Asset-Level gemäß ISO 27001 Annex A 5.30, NOT enterprise-BCM), and security measures in live operations
 
 ### Earlier Roles at Deutsche Bahn
 - **Language Data Engineer** (01/2021 – 01/2026, continues alongside ISM role from 02/2026): Subject matter administrator of two group-wide translation/terminology management applications; process automation with Python and NLP libraries; structured application documentation
@@ -289,7 +366,7 @@ Use this as the authoritative source. Do not draw on information outside this pr
 Deutsch — Muttersprache · Englisch — Muttersprache
 
 ### Unique differentiators (use when relevant to the role)
-- **Agentic AI (practical + risk-aware)**: Builds and maintains n8n automation workflows professionally; OpenClaw is a private open-source agentic AI project. Hands-on understanding of agentic risk: uncontrolled tool calls, data exfiltration, prompt injection — valuable in risk analysis and advisory roles. This dual angle (risk understanding + practical adoption) is particularly relevant for consulting or advisory roles.
+- **Agentic AI / OpenClaw (private interest, risk-aware)**: Contributor to OpenClaw, an open-source agentic-AI framework by Peter Steinberger. Privately follows agentic AI architectures and their risks (OWASP LLM Top 10: Excessive Agency, Indirect Prompt Injection, Sensitive Information Disclosure). **Strict scope:** this is a *private* interest, not a *work* claim — n8n and agentic AI must never be tied to Lutz's work context in the Anschreiben. Surface this differentiator only when the role explicitly touches AI, LLM security, or agentic-system risk. For unrelated roles, leave it out.
 - **AI data layer (productive contact)**: Via the LDE role, operates at the data layer of DB's internal LLM system (BahnGPT). The CLS-maintained multilingual terminology database feeds grounding data into BahnGPT's RAG layer and into other downstream systems (Konzernregelwerksdatenbank, Autorenunterstützungsprogramme, MT service). This is the strongest differentiator for AI-governance-adjacent roles — surface it when the vacancy mentions AI, data governance, or LLM-related responsibility.
 - **Python/NLP**: Practitioner-level; uses it for process automation, text processing, and trains colleagues on it.
 - **Communication**: Teaches colleagues technical skills; experienced at advocating security requirements to IT units and business departments without being prescriptive. NOT to be conflated with Security Awareness (see Awareness vs. Wissensvermittlung constraint above).

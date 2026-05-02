@@ -75,7 +75,8 @@ These constraints mirror the `/cover-letter` skill. Treat every sentence in ever
 
 - **Lutz's official internal role title is "Sekundärassetverantwortlicher"**, a DB-konzerninterne Rollenbezeichnung. "Information Security Manager" is the functional/market-standard description used in CV and Anschreiben. In the interview, Lutz must be able to state this distinction if asked about his formal title. **Include this as a pre-baked Q&A in Section 1** whenever the vacancy is non-DB-familiar:
   > *"Wie lautet Ihre offizielle Stellenbezeichnung?"* → *"Meine interne Bezeichnung bei DB ist Sekundärassetverantwortlicher. Das ist die DB-konzerninterne Rolle für die Informationssicherheit eines definierten Anwendungs-Assets — funktional entspricht das einem Information Security Manager mit anwendungsbezogenem Scope, analog zur Rollenlogik nach ISO/IEC 27001."*
-- **ISMS scope is team- and application-level, never corporate-wide.** Lutz is Sekundärassetverantwortlicher for three productive applications of his own team. He does NOT own corporate-wide policies, does NOT cover other teams/units, does NOT speak for the whole DB group.
+- **Lutz is an Information Security Manager *embedded in a Fachbereich* (Corporate Language Solutions, CLS), not part of a central CISO function.** A-Skizzen and Highlights must reflect this positioning: he is the ISM *within* a business unit, responsible for that unit's applications. He is *not* a central security advisor speaking *to* Fachbereiche from outside. If the vacancy expects central-CISO experience, this becomes a Section-2 risk with proactive scoping.
+- **ISMS scope is team- and application-level, never corporate-wide.** Lutz is Sekundärassetverantwortlicher for the productive applications of his own team. He does NOT own corporate-wide policies, does NOT cover other teams/units, does NOT speak for the whole DB group.
   - **Never write:** "konzernweiter ISMS-Kontext", "konzernweite Richtlinien", "konzernweites ISMS", "verantworte konzernweit"
   - **Write instead:** "Anwendungen und Assets in meinem Verantwortungsbereich", "im Rahmen des ISMS meines Teams", "anwendungsbezogen", "auf Team-Ebene"
 - **The governance role belongs to the CLS unit, not to Lutz personally.** Do not attribute unit-level governance responsibility to Lutz.
@@ -96,11 +97,59 @@ Strict. Do not upgrade a framework into a higher tier in A-Skizzen, Highlights, 
 1. A question like *"Wo liegen Ihre Schwerpunkte bei [Framework X]?"* with an honest A-Skizze that downgrades to the correct tier.
 2. A **Kurzbriefing** sub-block directly below that A-Skizze with 3–6 bullets of factual background on the framework (scope, authority, pillars, key terms) so Lutz can use the vocabulary correctly in the interview without overclaiming experience.
 
+**BSI IT-Grundschutz and NIS2 should remain present in A-Skizzen at the correct tier — do not omit defensively.** Both frameworks are part of Lutz's working vocabulary (BSI via the konzerninternes DB-Schema; NIS2 as actively beobachteter regulatorischer Rahmen). The "Indirect" / "Conceptual only" tiers describe phrasing constraints, not removal: omitting these frameworks in roles where they are part of the operating environment (regulated finance, KRITIS-adjacent, public sector) weakens the prep doc unnecessarily. Include with tier-correct phrasing.
+
+### Practice claim discipline (universal rule)
+
+The framework ladder above is one application of a more general principle that applies to every concrete practice claim in the Anschreiben or CV: **the claim must survive a 5-minute focused drill** — *„Was genau?"* → *„Wie viele / wie oft?"* → *„Produktiv oder Sandbox / Eigenanteil oder Beitrag?"*. If any step would break the claim, the prep doc must (a) flag it as a Section-2 risk and (b) provide a Section-1 defense Q&A with proactive scoping language.
+
+The four high-risk claim families below have produced concrete failures before. Every Anschreiben must be cross-checked against them, and every triggered claim must appear in both Section 1 (defense) and Section 2 (risk).
+
+##### Agentic AI / n8n / OpenClaw — work vs. private split
+
+**At work, n8n and agentic AI are off-limits as claims** — they must not appear in any work-context A-Skizze. *„Workflow-Automation"* generic is allowed; n8n by name and *„agentenbasiert"* are not.
+
+**OpenClaw and agentic AI belong in the private-interest section only**, surface them in A-Skizzen only when the role is AI/LLM-security/agentic-adjacent. OpenClaw is contributor, not author (Peter Steinberger is the creator).
+
+**If the Anschreiben overscopes any of these (n8n at work, agentic at work, OpenClaw authorship):**
+- Section-2 Risiko-Eintrag — explicit
+- Section-1 Defense-Q — pre-bake the proactive correction
+- Defense A-Skizze must teach the scope split: *„Eine Klarstellung — n8n und agentische AI gehören nicht in meinen Arbeitskontext. Beruflich bin ich mit Workflow-Automation in generischem Sinne befasst. Agentische AI verfolge ich privat und bin Contributor bei OpenClaw, einem Open-Source-Agenten-Framework von Peter Steinberger. Im Anschreiben hätte ich diese Trennung klarer ziehen sollen."*
+
+Defense-Q wording must teach the *„präzisieren"* vocabulary, not the *„korrigieren"* vocabulary (see Scope-correction vocabulary below).
+
+##### Advisory scope
+
+- *„Fachbereiche beraten"* in Anschreiben/CV often mirrors vacancy phrasing that implies corporate-wide advisory. Lutz's reality: PAVs of his applications (in different Fachbereichen) plus platform team. If the Anschreiben uses unscoped *„Fachbereichsberatung"*: Section-2 risk + Section-1 defense Q with the scoped reformulation (*„Konkret berate ich die Primärassetverantwortlichen meiner Anwendungen, die in unterschiedlichen Fachbereichen sitzen, sowie das Plattform-Team — bankweite Cross-Cutting-Beratung wäre die Skalierung in Ihrer Rolle."*).
+
+##### BCM / Notfallplanung
+
+- Lutz's apps are **not KRITIS-relevant and not BCM-relevant in the enterprise sense**. He does Asset-Level-Notfallkonzepte gemäß ISO 27001 Annex A 5.30. If the Anschreiben/CV uses *„BCM"*, *„Disaster Recovery"*, *„Notfallplanung"* without scoping: Section-2 risk + defense Q (*„Konkret: Annex A 5.30 auf Anwendungsebene — Wiederanlauf, Backup, Eskalationswege; RTOs im Tagesbereich. Kein Enterprise-BCM, kein KRITIS."*).
+
+##### Authorship vs. contribution
+
+For every named project/system, the prep doc must establish whether Lutz is author, contributor, or operator. OpenClaw = contributor. BahnGPT = data-layer operator (via CLS terminology DB feeding RAG), nicht architect. The four CLS apps = three commercial (operator), one in-house dev (author/maintainer). If the Anschreiben blurs this: Section-2 risk + clarification Q.
+
+### Scope-correction vocabulary (für Lutz im Gesprächsmoment)
+
+When Section-1 defense answers walk Lutz through scope corrections, the vocabulary matters. *„Korrigieren"* sounds like retraction; *„präzisieren"* sounds like sharpening. Train the latter in every defense A-Skizze.
+
+| Vermeiden | Stattdessen |
+|---|---|
+| *„Ich habe gelogen"* / *„Das war falsch"* | — |
+| *„Tut mir leid, das stimmt so nicht"* | *„Ehrliche Präzisierung:"* |
+| *„Eigentlich nicht"* | *„Im engeren Sinne nicht"* |
+| *„Ich habe übertrieben"* | *„Ich hätte präziser fassen sollen"* |
+| *„Da bin ich zurückhaltender, als das Anschreiben klingt"* | *„Konkret heißt das:"* + scoped Tatsachen |
+
+Defense A-Skizzen should open with *„Konkret heißt das:"* or *„Ehrliche Präzisierung:"* and lead directly into the narrower-but-true scope. The interviewer hears self-reflection and methodische Schärfe, not retreat.
+
 ### Audit experience
 
-- **No external audit-Begleitung.** Lutz has never led or independently accompanied an external audit.
-- **Internal audit:** Teilnahme an einer internen Prüfung nach Abschluss des ISMS-Rollouts auf Reifegrad 3.
-- If the vacancy mentions "Begleitung interner und externer Audits", this is a Section-2 risk by default. A-Skizzen must not claim audit-Begleitung as existing experience.
+- **Lutz has not undergone any audits — neither internal nor external.** No audit-Begleitung in any form has occurred.
+- **What he has built is audit-readiness**, a state of preparedness: durchgängig revisionssichere Dokumentation, nachvollziehbare Risikobehandlung, belegbare Maßnahmenwirksamkeit. Audit-Readiness ≠ Audit-Erfahrung — the prep doc must keep this distinction crisp.
+- If the vacancy mentions *"Begleitung interner und externer Audits"*, this is a Section-2 risk **by default**. The A-Skizze must position Audit-Readiness as the asset and Audit-Begleitung as the next-step learning curve, never as existing experience.
+- Sample defense framing for Section 1: *"Audit-Readiness ist Tagesgeschäft — meine Anwendungen sind durchgängig auf Audit-Niveau dokumentiert. Eine konkrete Audit-Begleitung habe ich noch nicht durchgeführt; das wäre der operative Schritt, den ich in der Rolle gehen würde."*
 
 ### Tools and systems
 
@@ -117,11 +166,24 @@ Strict. Do not upgrade a framework into a higher tier in A-Skizzen, Highlights, 
 - Lutz's LDE role puts him at the **data layer of a productive enterprise AI system**. For vacancies touching AI, LLMs, data governance, or AI-security: surface this as a highlight and Q&A anchor. It is a genuine differentiator that most candidates in ISMS roles do not have.
 - **Caveat:** Do not describe BahnGPT architecture in detail — it's a DB-internal system and specifics are likely NDA. Stay at the functional level ("Terminologiedatenbank liefert Grounding-Daten für die interne RAG-Implementation").
 
-### Mirror Anschreiben overclaims into Section 2
+### Mirror Anschreiben overclaims into Section 2 — and into Section 1 as defense Qs
 
-If the Anschreiben contains a framework/experience claim that the framework-ladder above would downgrade — for example "BSI IT-Grundschutz fließt kontinuierlich in meine Arbeit ein" while the ladder says BSI is indirect — then that claim MUST appear in Section 2 as a risk with a framing suggestion that lets Lutz reconcile the cover-letter tone with the truthful scope in the interview, WITHOUT openly disowning the Anschreiben.
+If the Anschreiben contains any claim that the framework ladder OR the practice claim discipline above would scope-correct — for example *"BSI IT-Grundschutz fließt kontinuierlich in meine Arbeit ein"* while the ladder says BSI is indirect, or *"produktiv mit agentenbasierter Automatisierung"* while reality is one workflow plus contributor role — then that claim MUST appear in **both** sections:
 
-This is the rule that failed in the first run of this prep — A-Skizzen silently inherited cover-letter overclaims instead of catching them. Every Anschreiben claim must be cross-checked against the framework ladder, the audit rule, and the tools rule before writing A-Skizzen.
+1. **Section 2 — Risiko-Eintrag** with explicit framing-Vorschlag that walks Lutz through the scoped truthful answer
+2. **Section 1 — Defense-Q&A** that pre-bakes the question an attentive interviewer would ask, with an A-Skizze that uses the *„präzisieren"* vocabulary and lands the scoped reality
+
+This double-anchoring is the rule that failed in the dwpbank run (April 2026) — A-Skizzen silently inherited cover-letter overclaims (*„produktiv mit agentenbasierter Automatisierung"*) without preparing the scope correction. The interview turned anxiety-driven, with Lutz considering withdrawal, because the prep doc had no defense for the Anschreiben sentence.
+
+**Anschreiben-Claim-Inventory (do this before drafting Section 1):**
+
+| Anschreiben-Satz | Implizierter Scope | Tatsächlicher Scope | Section-2-Risiko | Section-1-Defense-Q |
+|---|---|---|---|---|
+| (one row per concrete practice/experience claim) | (what the wording suggests) | (what's verifiable) | (risk + framing) | (Q + A-Skizze) |
+
+If a claim's implied scope matches reality: leave it. If it diverges: it must show up in both sections. The inventory itself does not need to appear in the final prep doc, but its conclusions do.
+
+Every Anschreiben claim must be cross-checked against the framework ladder, the practice-claim discipline, the audit rule, and the tools rule before writing A-Skizzen.
 
 ### The no-fabrication rule
 
@@ -195,7 +257,7 @@ Do not invent weaknesses. If the profile honestly covers a requirement, don't ma
 
 Source these from the cover-letter's differentiator paragraph and the strongest CV bullets. Typical highlights:
 
-- **ISMS-Rollout Reifegrad 3:** Drei produktive Anwendungen eigenverantwortlich bis Reifegrad 3 gehoben — ohne externe Koordinationsunterstützung, inklusive Schutzbedarfsanalyse, Risikobehandlung, revisionssicherer Nachweisdokumentation.
+- **ISMS-Rollout Reifegrad 3:** Vier produktive Anwendungen eigenverantwortlich bis Reifegrad 3 gehoben — ohne externe Koordinationsunterstützung, inklusive Schutzbedarfsanalyse, Risikobehandlung, revisionssicherer Nachweisdokumentation. (Hinweis: Zwei der vier sind intern als ein Asset gruppiert; in externen Materialien immer als vier zählen — die Gruppierung ist eine SAV-Verwaltungsfrage, kein realer Scope-Abzug.)
 - **AI-Datenebene + Agentic AI:** Über die LDE-Rolle operativer Kontakt mit der Datenebene eines produktiven AI-Systems — die CLS-Terminologiedatenbank liefert Grounding-Daten für die RAG-Implementation von BahnGPT (DB-interner LLM-Dienst) sowie die Konzernregelwerksdatenbank und Autorenunterstützungsprogramme. Ergänzend produktive n8n-Automatisierungen und OpenClaw als privates Open-Source-Agenten-Framework. Verständnis für agentische Risiken (unkontrollierte Tool-Calls, Datenabflüsse, Prompt Injection) und die AI-Datengovernance-Seite von innen. Für AI-Governance-nahe Rollen der stärkste Differentiator.
 - **Systematische Zertifizierungsdichte:** PECB ISO/IEC 27001 Implementer, CompTIA Security+ und Network+, Microsoft Azure Fundamentals — in zwei Jahren neben laufender ISMS-Verantwortung aufgebaut. CISM und CISSP als nächste Schritte geplant.
 - **Wissensvermittlung im Team:** Seit Anfang 2026 Python- und NLP-Schulungen für das eigene Team, Inhalte selbst konzipiert — belastbarer Beleg für didaktischen Ansatz. (Nicht als Security Awareness deklarieren.)
@@ -322,9 +384,19 @@ Run this before generating the `.docx`. Every item must be clean.
 4. **Audit:** No A-Skizze claims external audit-Begleitung. If audit is mentioned by the vacancy, the honest internal-audit framing is in place.
 5. **ServiceNow and DB-internal tools:** No claimed ServiceNow experience. SESAM / IRMA / other DB-internal tool names appear only with functional translation (or not at all).
 6. **Awareness:** Python/NLP training is framed as Wissensvermittlung, not Security Awareness — unless an explicit bridge is built.
-7. **Anschreiben-Spiegelung:** Every framework or experience claim in the Anschreiben that the framework-ladder would downgrade has been mirrored into Section 2 as a risk with framing-suggestion.
-8. **BahnGPT / RAG:** Functional-level description only, no architecture insider details.
-9. **Kurzbriefings present:** For every framework or tool the vacancy names that Lutz doesn't hold operationally, the corresponding Q in Section 1 has a Kurzbriefing sub-block.
-10. **Title clarification:** If the interviewer is unlikely to know DB-internal nomenclature, the Sekundärassetverantwortlicher-vs-Information-Security-Manager Q is present.
+7. **Anschreiben-Spiegelung (frameworks):** Every framework or experience claim in the Anschreiben that the framework-ladder would downgrade has been mirrored into Section 2 as a risk *and* into Section 1 as a defense Q&A with the *„präzisieren"* vocabulary.
+8. **Anschreiben-Spiegelung (practice claims):** Every concrete practice claim from the Anschreiben has been run through the 5-minute drill (*„Was genau? Wie viele? Produktiv oder Sandbox?"*). Triggered claims appear in both Section 2 and Section 1 with proactive scoping. Special attention to:
+   - **n8n / agentic AI at work** — should NOT appear as work claim at all; if present, Section-2 risk + Section-1 work-vs-private clarification Q is mandatory
+   - **OpenClaw** — contributor only (Peter Steinberger is the author); any authorship implication = Section-2 risk
+   - **Advisory scope** — corporate-wide vs. PAV-scope distinction
+   - **BCM / Notfall** — Asset-Level (Annex A 5.30) vs. enterprise-BCM
+   - **Audit** — Audit-Readiness (real) vs. Audit-Begleitung (not yet experienced)
+9. **Authorship vs. contribution:** For every named project/system in CV or Anschreiben (OpenClaw, BahnGPT, n8n workflows, the four CLS apps, the in-house Eigenentwicklung), the prep doc establishes Lutz's actual role (author / contributor / operator) and at least one A-Skizze trains the precise wording.
+10. **Scope-correction vocabulary present:** Every defense A-Skizze uses *„Konkret heißt das"* / *„Ehrliche Präzisierung"* / *„Im engeren Sinne"* — never *„Das war falsch"* / *„Tut mir leid"* / *„Eigentlich nicht"*.
+11. **BahnGPT / RAG:** Functional-level description only, no architecture insider details.
+12. **Kurzbriefings present:** For every framework or tool the vacancy names that Lutz doesn't hold operationally, the corresponding Q in Section 1 has a Kurzbriefing sub-block.
+13. **Title clarification:** If the interviewer is unlikely to know DB-internal nomenclature, the Sekundärassetverantwortlicher-vs-Information-Security-Manager Q is present.
 
 If any answer is "no", fix it before writing the files.
+
+> **Lesson learned (dwpbank, April 2026):** the prep doc must not assume the Anschreiben is internally consistent. It must actively scope-correct every overclaim and walk Lutz through the *„präzisieren"* answer in advance — silent inheritance of cover-letter wording into A-Skizzen has produced acute pre-interview anxiety and risk of withdrawal.
