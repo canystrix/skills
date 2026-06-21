@@ -64,13 +64,49 @@ Write 4–5 body paragraphs in German. Follow the prose rules below precisely.
 - Listing skills as a series of nouns without verbs
 
 **Use instead:**
-- A colon to pivot into specifics: "Konkret heißt das: Schutzbedarfsanalysen, …"
-- Contrast to show perspective: "nicht aus der Vogelperspektive, sondern aus der Praxis"
 - Short personal statements at the end of paragraphs, not bureaucratic summaries
-- Integrated flow: "von der Ableitung bis zur Umsetzung" instead of "leite ab und setze um"
-- Varied sentence rhythm — alternate short punchy sentences with longer structured ones
+- Integrated flow ("von der Ableitung bis zur Umsetzung") instead of "leite ab und setze um"
+- A short, blunt sentence (5–12 words) in every body paragraph, breaking the rhythm of longer ones
 
 **Test before finalising:** Read each paragraph aloud mentally. If it sounds like a job description or a bullet list dressed as prose, rewrite it. Ask: could this sentence only have been written by Lutz, or could it describe anyone?
+
+### Anti-AI-Marker Prose Rules
+
+Modern LLM prose has visible tells in German Anschreiben. A reader who works with AI daily — and many recruiters now do — spots these patterns quickly. The aim is not to write less polished, but to remove the *patterns* that mark output as generated. Screen every draft against the following, and rewrite where flagged.
+
+**Em dashes (—)**
+The strongest current tell. Budget: at most **one em dash per cover letter**, and only when no other punctuation works. Replace with:
+- A comma for a parenthetical insertion
+- Parentheses for a proper aside
+- A period (split into two sentences) for emphasis
+- "und zwar" / "nämlich" / "also" for an explanatory pivot
+
+**Colon pivots to explanation**
+"Konkret heißt das:", "Was ich anbiete:", "Das bedeutet:", "Anders gesagt:" — these introduce a polished, listy explanation typical of AI output. Avoid. If a list needs introducing, use a natural lead-in: *"Dazu gehören X, Y und Z."* or *"X und Y gehören dazu."* Colons after "z. B.", "etwa", or in actual tabular contexts remain fine.
+
+**Antithesis structures**
+"Nicht X, sondern Y" / "Nicht aus der Vogelperspektive, sondern aus der Praxis" / "Weniger X, mehr Y" — scripted contrast. Replace with a simple positive statement or two coordinated clauses without the *nicht-sondern* scaffold.
+
+**Rule of three**
+Three-item parallel enumerations ("Schutzbedarfsanalyse, Risikobehandlung, Maßnahmenableitung") signal AI prose, especially when each item is the same word class. Vary list length (two or four items), or break the list into a sentence with conjunctions.
+
+**"Genau" as connector**
+"Genau hier", "Genau diese Verbindung", "Genau das ist der Teil" — used to refer back to the previous sentence, this is an AI verbal tic. Drop "genau" or restructure the reference.
+
+**Self-praise softeners**
+"Fällt mir leicht", "Macht mir Spaß", "Liegt mir besonders", "Sehe ich als spannende Herausforderung" — polished mini-claims that appear in AI output. If a positive statement about the work is wanted, say it once with concrete content, not via a softener.
+
+**Adverb stacking**
+"Geräuschlos, geduldig", "Strukturiert, methodisch", "Pragmatisch, gewissenhaft" — paired emotive adverbs read as AI. Pick one, or drop both and rely on the noun.
+
+**Smart metaphors**
+"Aus der Vogelperspektive", "Zwei Stränge, die zusammenlaufen", "Die nächste logische Erweiterung", "Im Spannungsfeld zwischen X und Y" — polished metaphors that read written-for-effect. Use sparingly; at most one per letter, and only if it carries meaning the literal alternative does not.
+
+**Sentence-rhythm uniformity**
+AI prose tends to long-medium-long sentence patterns, each closing with a parenthetical or coordinated tail. Include at least one short blunt sentence per body paragraph that lands as a statement.
+
+**Em-dash interjections in particular**
+"Die Stelle — eine Mischung aus X und Y — interessiert mich." This em-dash-flanked appositive is the most visible AI structure in modern German. Replace with commas, parentheses, or "also". Do not use it for emphasis.
 
 ### Factual Constraints — Do Not Violate
 
@@ -80,8 +116,8 @@ Treat every sentence you write as a claim that must map to something in the prof
 
 - **2023 start was at Deutsche Bahn AG, NOT at DB Systel.** Lutz began ISMS work in March 2023 at the DB AG (inside the unit **Corporate Language Solutions**, abbreviated CLS). He moved to **DB Systel GmbH** only in February 2026 as part of an internal transfer.
   - **Never write:** "Seit 2023 bei DB Systel", "Seit 2023 bei der DB Systel GmbH"
-  - **Write instead:** "Seit 2023 im Information Security Management nach ISO/IEC 27001 — zunächst bei der Deutschen Bahn AG, seit Anfang 2026 bei der DB Systel GmbH, dem IT-Partner der Deutschen Bahn." Or collapse if the vacancy doesn't care about the unit distinction: "Seit 2023 verantworte ich die Informationssicherheit für Anwendungen in meinem Verantwortungsbereich nach ISO/IEC 27001 (zunächst bei der DB AG, seit 2026 bei DB Systel)."
-- **DB Systel identification.** Always: "DB Systel GmbH, dem IT-Partner der Deutschen Bahn" — not "Infrastrukturdienstleister", not just "Deutschen Bahn".
+  - **Write instead:** "Seit 2023 im Information Security Management nach ISO/IEC 27001, zunächst bei der Deutschen Bahn AG, seit Anfang 2026 bei der DB Systel GmbH, dem IT-Partner der Deutschen Bahn." Or collapse if the vacancy doesn't care about the unit distinction: "Seit 2023 verantworte ich die Informationssicherheit für Anwendungen in meinem Verantwortungsbereich nach ISO/IEC 27001 (zunächst bei der DB AG, seit 2026 bei DB Systel)."
+- **DB Systel identification.** Always: "DB Systel GmbH, dem IT-Partner der Deutschen Bahn", not "Infrastrukturdienstleister", not just "Deutschen Bahn".
 
 #### Role title and scope
 
@@ -115,6 +151,22 @@ If the vacancy asks for operational experience in a framework that falls into "I
 - **NIS2** belongs in the regulatorisch-aware vocabulary. Mention it as *„als regulatorischer Rahmen aktiv beobachtet"* / *„konzeptionell abgedeckt"* — signals awareness of the directive without overclaiming productive Umsetzungserfahrung.
 
 The rule is: **mention at the correct tier, do not omit defensively, do not upgrade the tier**. The phrasing in the ladder above is the green-light language for these frameworks.
+
+#### Maßnahmen vs. Kontrollen — verb discipline
+
+In a BSI-Grundschutz-orientierten Modell (the DB-konzerninternes Schema works this way), the conceptual chain is:
+
+1. **Schutzbedarfsanalyse** → Klassifikation (Normal / Hoch / Sehr Hoch)
+2. The classification **automatisch zugeordneter Maßnahmenkatalog** — the Kontrollen / Anforderungen are *assigned*, not derived by the SAV
+3. The SAV / ISM **implements, adapts, and documents** the assigned Maßnahmen for the concrete application
+
+Therefore:
+
+- **Never write:** "Ableitung technischer und organisatorischer Kontrollen", "Definition der Kontrollen", "Auswahl der Maßnahmen aus dem Annex A" — these all imply the SAV picks controls, which is not how the framework works.
+- **Write instead:** "Umsetzung der zugeordneten Maßnahmen", "Anpassung der vorgegebenen Maßnahmen auf die konkrete Anwendung", "Implementierung und Nachweis der Maßnahmen aus dem Maßnahmenkatalog".
+- Even "Maßnahmenableitung" is borderline (it correctly hints at app-specific adaptation but can read as selection). Prefer "Umsetzung" / "Anpassung" when in doubt.
+
+The right verb pattern is: **Schutzbedarfsanalyse → Risikobehandlung → Umsetzung der zugeordneten Maßnahmen → Nachweisdokumentation**.
 
 #### Practice claim discipline (universal rule)
 
@@ -157,11 +209,12 @@ If the role does not touch AI/LLM/agentic, the entire topic stays out of the Ans
 
 ##### BCM / Notfallplanung
 
-- **Lutz's applications are NOT KRITIS-relevant and NOT BCM-relevant in the enterprise sense (BSI 200-4 / ISO 22301).** They are corporate language-service tools — failure causes business inconvenience, not safety or regulatory incidents.
-- What Lutz actually does: **Asset-level Notfallkonzepte gemäß ISO 27001 Annex A 5.30** — Wiederanlauf, Backup-Konzept, Eskalations- und Kontaktpfade, Notbetriebs-Verfahren. RTOs typischerweise im Tagesbereich.
-  - **Never write:** "Verantwortung für Business Continuity Management", "BCM-relevante Maßnahmen", "Notfallplanung für KRITIS-Systeme", "Disaster Recovery für geschäftskritische Anwendungen"
-  - **Write instead:** "Erstellung und Pflege von Notfallkonzepten auf Anwendungsebene gemäß ISO 27001 Annex A 5.30 — Wiederanlauf, Backup-Konzept, Eskalationswege"
-- If the vacancy explicitly demands BCM ownership (KRITIS bank, regulated finance), this becomes a Section-2 risk in the prep doc, not a claimed competence.
+- **Lutz's applications are NOT KRITIS-relevant and NOT BCM-relevant in the enterprise sense (BSI 200-4 / ISO 22301).** They are corporate language-service tools; failure causes business inconvenience, not safety or regulatory incidents.
+- **Schutzbedarf Verfügbarkeit is "normal" across his applications.** At Schutzbedarf normal, the framework does not require full Notfallkonzepte (Wiederanlauf, Backup-Konzept, Notbetriebs-Verfahren). At most, basic contact-path / Kontaktperson documentation. **Treat BCM / Notfallplanung as not in scope for Lutz's experience.**
+- **Default rule for Anschreiben: do not claim Notfallkonzepte, Annex A 5.30 work, RTOs, Wiederanlaufverfahren, or any BCM-style activity as a competence.** Even at Asset level, the activity is too thin to defend in a 5-minute drill.
+  - **Never write:** "Verantwortung für Business Continuity Management", "BCM-relevante Maßnahmen", "Notfallplanung für KRITIS-Systeme", "Disaster Recovery", "Notfallkonzepte auf Anwendungsebene gemäß ISO 27001 Annex A 5.30 pflege ich kontinuierlich", "Wiederanlauf- und Backup-Konzepte" — these all overclaim at Schutzbedarf normal.
+  - **Acceptable if the vacancy actively prompts:** "Notfall- und BCM-Themen begegnen mir auf Anwendungsebene nur sehr eingeschränkt — meine Anwendungen haben Schutzbedarf Verfügbarkeit normal; der Aufbau ausgeprägter Notfallkonzepte gehört bislang nicht zu meiner Praxis."
+- If the vacancy explicitly demands BCM ownership (KRITIS bank, regulated finance, Energie/OT contexts), this is a **gap to name openly**, not a competence to claim. Place it in the proactive-gap-naming section of the letter.
 
 ##### Authorship vs. contribution
 
@@ -209,14 +262,30 @@ Before you finalise the letter, read it top to bottom with this checklist in han
 4. Is ServiceNow or any DB-internal tool name mentioned? Remove.
 5. Is "Awareness" used in a way that implies security-awareness experience? Rewrite or soften.
 6. Is there any mention of external audit-Begleitung as existing experience? Remove.
-7. Does every concrete claim (framework, tool, activity) map to a specific item in the profile below? If not — remove or soften.
-8. **5-minute drill test for every concrete practice claim.** For each tool/activity/scope claim, simulate the three-step probe: *„Was genau?"* → *„Wie viele / wie oft?"* → *„Produktiv oder Sandbox / Eigenanteil oder Beitrag?"*. If any step would expose a narrower reality than the wording suggests — rewrite. Apply especially to:
+7. Does every concrete claim (framework, tool, activity) map to a specific item in the profile below? If not, remove or soften.
+8. **5-minute drill test for every concrete practice claim.** For each tool/activity/scope claim, simulate the three-step probe: *„Was genau?"* → *„Wie viele / wie oft?"* → *„Produktiv oder Sandbox / Eigenanteil oder Beitrag?"*. If any step would expose a narrower reality than the wording suggests, rewrite. Apply especially to:
    - n8n / agentic-AI at work — **forbidden**. n8n must not appear in any work claim; agentic AI must not be framed as a work activity. If these appear in the work context, remove.
    - OpenClaw / agentic AI in the private-interest section — only if role-relevant; OpenClaw is contributor (never author).
    - "Fachbereiche beraten" or similar (PAV-Scope vs. corporate-wide)
    - BCM / Notfallplanung (Annex A 5.30 Asset-Level vs. enterprise-BCM)
    - Audit claims — only Audit-Readiness, never Audit-Begleitung
    - Authorship vs. contribution / operation across all named systems
+9. **Maßnahmen vs. Kontrollen.** Any "Ableitung der Kontrollen" wording? Rewrite to "Umsetzung der zugeordneten Maßnahmen" per the verb-discipline section.
+10. **BCM / Notfallplanung claims.** Any reference to Notfallkonzepten, Annex A 5.30, Wiederanlauf, Backup-Konzepten, RTOs, or BCM as a competence? Remove — Schutzbedarf Verfügbarkeit ist „normal", die Anwendungen sind nicht BCM-relevant. If the vacancy actively asks for BCM, name it as a gap, not as a competence.
+
+### Pre-submit AI-marker checklist
+
+Run this in addition to the factual checklist. The aim is to remove patterns that mark the text as LLM-generated, not to make it less polished.
+
+1. **Count em dashes** in the body. Target: 0–1 per letter. Above that, rewrite to commas, parentheses, periods, or "also" / "nämlich".
+2. **Scan for colon pivots** ("Konkret heißt das:", "Was ich anbiete:", "Das bedeutet:") that lead into explanations or lists. Replace with natural lead-ins ("Dazu gehören…", "X und Y gehören dazu").
+3. **Scan for "nicht X, sondern Y"** structures. Replace with a positive statement.
+4. **Identify any three-item parallel enumerations.** Vary list length or break into a sentence.
+5. **Scan for "Genau"** as a connector ("Genau hier", "Genau diese", "Genau das"). Drop or restructure.
+6. **Scan for self-praise softeners** ("fällt mir leicht", "macht mir Spaß", "liegt mir besonders"). Remove or replace with content.
+7. **Identify adverb pairs** ("geräuschlos, geduldig" etc.). Pick one or drop both.
+8. **Check sentence rhythm** in every body paragraph. At least one short blunt sentence (5–12 words) per paragraph.
+9. **Smart metaphor budget** — max one per letter, and only if it carries real meaning.
 
 Only if every answer is clean, generate the .docx and .md.
 
@@ -284,41 +353,6 @@ Mit freundlichen Grüßen
 
 ---
 
-## Step 5 — Archive to Vault
-
-After generating outputs, save a research note to the knowledge base at:
-`/Users/canystrix/dev/vault/raw/job-search/<company>-<role-slug>.md`
-
-Format:
-
-```markdown
-# <Company> — <Role Title>
-
-**Date seen:** <YYYY-MM-DD>
-**Location:** <city/remote>
-**Salary:** <if stated>
-
-## Role Summary
-
-<one paragraph>
-
-## Key Requirements
-
-<bulleted list of must-haves and nice-to-haves>
-
-## Coverage Assessment
-
-<the requirement→profile mapping from Step 2: what's covered, what's partial, what's not covered>
-
-## Notes
-
-<anything else worth remembering: tone, company context, fit concerns>
-```
-
-After writing the file, update `/Users/canystrix/dev/vault/wiki/job-search/_summaries.md` by appending a one-paragraph entry for this vacancy (following the existing format in that file). If `_summaries.md` does not exist yet, create it.
-
----
-
 ## Lutz's Profile (Canonical Reference)
 
 Use this as the authoritative source. Do not draw on information outside this profile.
@@ -338,10 +372,11 @@ Use this as the authoritative source. Do not draw on information outside this pr
 **Information Security Manager (ISMS) / Sekundärassetverantwortlicher** at Deutsche Bahn AG, Frankfurt am Main — within the unit **Corporate Language Solutions (CLS)**
 - CLS is a DB-AG-unit with a group-wide governance role for language- and terminology-related applications. Lutz's role inside CLS is application-scoped, not unit-scoped.
 - Independently rolled out ISMS for **four production applications** of his own team — reached maturity level 3 without external coordination support. (Note: two of the four are grouped as a single asset for internal SAV-administration purposes. In external materials — Anschreiben, CV, interview prep — always count as four; the internal grouping is an accounting convenience, not a real reduction of scope.)
-- Conducted Schutzbedarfsanalysen and risk assessments; derived and implemented technical and organisational measures
+- Conducted Schutzbedarfsanalysen and risk assessments; implemented the framework-assigned technical and organisational measures (Maßnahmen are auto-assigned via Schutzbedarf classification, not freely chosen)
 - Created audit-ready evidence documentation and prepared governance reviews
-- **No audit participation (internal or external).** Applications are maintained in an audit-ready state — but no audit has yet been conducted on them with Lutz's involvement.
-- Implemented access concepts, Notfallkonzepte (Asset-Level gemäß ISO 27001 Annex A 5.30, NOT enterprise-BCM), and security measures in live operations
+- **No audit participation (internal or external).** Applications are maintained in an audit-ready state; no audit has yet been conducted on them with Lutz's involvement.
+- **Schutzbedarf Verfügbarkeit is "normal" across all applications.** Full Notfallkonzepte / BCM-style activities (Wiederanlauf, Backup-Konzept, Notbetrieb per Annex A 5.30) are NOT in scope and must not be claimed in Anschreiben. At most basic contact-path documentation.
+- Implemented access concepts and the assigned security measures in live operations
 
 ### Earlier Roles at Deutsche Bahn
 - **Language Data Engineer** (01/2021 – 01/2026, continues alongside ISM role from 02/2026): Subject matter administrator of two group-wide translation/terminology management applications; process automation with Python and NLP libraries; structured application documentation

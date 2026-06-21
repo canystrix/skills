@@ -344,7 +344,7 @@ Both files live inside the company folder.
 Use the bundled helper at `scripts/md_to_docx.py` (sibling to this SKILL.md). It converts the prep markdown to a clean Calibri-styled Word document using the same font and margin conventions as Lutz's other application documents. Invoke it with the markdown path; it writes a `.docx` of the same stem:
 
 ```bash
-python3 /Users/canystrix/dev/repos/skills/skills/interview-prep/scripts/md_to_docx.py \
+python3 /Users/canystrix/dev/skills/skills/interview-prep/scripts/md_to_docx.py \
   /Users/canystrix/dev/job-applications/<company>/interview-prep-<company>.md
 ```
 

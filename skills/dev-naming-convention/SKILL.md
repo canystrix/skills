@@ -1,77 +1,53 @@
 ---
 name: dev-naming-convention
-description: Enforces consistent lowercase kebab-case naming for all files and folders in the /Users/canystrix/dev workspace. Use this skill whenever creating, renaming, restructuring, or auditing files and folders in dev — new projects, scripts, data files, notes, config files, subdirectories. Skips names that are owned by an external ecosystem (Python packaging, Git, Claude tooling, GitHub, Django, etc.). Use this any time the user asks you to create a file or folder in the dev workspace, or asks to audit, fix, or check naming consistency.
+description: Tiebreaker naming rule for free-form files and folders in /Users/canystrix/dev — use lowercase kebab-case when no ecosystem convention applies. Use this skill when creating, renaming, or auditing names where you'd otherwise have to choose between styles (docs, data files, project folders, notes, configs, non-code assets). Do NOT use it to override language- or framework-mandated names — those follow their own rules (PEP 8 for Python, Django app dirs, vendor folders, etc.). Use this when asked to "audit", "fix", or "check" naming consistency in the dev workspace.
 ---
 
 # Dev Workspace Naming Convention
 
-All files and folders you create or rename in `/Users/canystrix/dev` follow one rule, unless an exemption applies.
+A tiebreaker for free-form names. Ecosystem rules always win.
 
-## The Rule
+## Scope
+
+This skill applies **only to names where no ecosystem convention exists** — docs, data files, project folders, notes, scripts in non-code roles, asset filenames, etc. Where a language, framework, or tool dictates naming, follow that — don't apply this skill on top.
+
+In particular:
+- **Python files (`.py`)** follow **PEP 8** — lowercase, with underscores if readability needs them (`detect_lang.py`, `step_1_logic.py`). Hyphens are illegal in Python module names. Never kebab-case a `.py` file, even one that is "only a script" — the cost of accidental drift outweighs the gain.
+- **Python packages** (directories with `__init__.py`) use lowercase, ideally no separator; underscores allowed if needed.
+- **Django apps** use whatever style the project already established (often `PascalCase`); match the project.
+- **Framework/tool-generated names** (`manage.py`, `migrations/0001_initial.py`, `package.json`, `Dockerfile`, etc.) are left alone.
+- **Vendor / third-party sample folders** keep their upstream names.
+
+If you would naturally follow an ecosystem rule, just do that. This skill does not need to weigh in.
+
+## The Rule (for free-form names only)
 
 **Lowercase kebab-case.** Every word lowercase, separated by hyphens. No underscores, no spaces, no camelCase, no PascalCase, no mixed case.
 
 ```
 good:  iso-27001-gap-analysis.md
-good:  mqxliff-term-extractor/
-good:  secure-local-translator.py
+good:  mqxliff-term-extractor/        (project folder, not a Python package)
 good:  2026-04-16-review-notes.md
+good:  alignment-report.json
 
 bad:   ISO_27001_Gap_Analysis.md
 bad:   MQXLIFFTermExtractor/
-bad:   SecureLocalTranslator.py
 bad:   review_notes_april.md
 ```
 
-**Language:** English. Use English words in free-form names. Domain terms with no clean English equivalent (`mqxliff`, `plunet`, `cls`) are acceptable as-is.
+**Language:** English. Domain terms with no clean English equivalent (`mqxliff`, `plunet`, `cls`) are acceptable.
 
-**Extensions:** Always lowercase — `.md`, `.py`, `.json`, `.csv`, never `.MD`, `.JSON`.
+**Extensions:** Always lowercase — `.md`, `.json`, `.csv`, never `.MD`, `.JSON`.
 
-**Numbers and dates:** Embed them inline — `iso-27001`, `v1-2`, `2026-04-16-notes.md`, `chunk-01`.
+**Numbers and dates:** Inline — `iso-27001`, `v1-2`, `2026-04-16-notes.md`, `chunk-01`.
 
 **Abbreviations:** Keep established ones intact and lowercase — `nlp`, `api`, `csv`, `llm`, `mqxliff`, `cls`. Do not expand them.
 
 ---
 
-## Exemptions
-
-These names are owned by an external system. Do not rename or correct them.
-
-**Python ecosystem**
-- `__init__.py`, `__main__.py`, `__pycache__/`
-- `setup.py`, `setup.cfg`, `pyproject.toml`
-- `requirements.txt`, `requirements-dev.txt`
-- `conftest.py`, `pytest.ini`, `tox.ini`, `MANIFEST.in`
-- `manage.py`, `wsgi.py`, `asgi.py` (Django entry points)
-- Django-generated migration files (e.g. `0001_initial.py`)
-- `.venv/`, `venv/`, `dist/`, `build/`, `*.egg-info/`
-- **Importable Python package directories** — a directory that is a Python package (contains `__init__.py` and is meant to be imported) must use `snake_case` because Python import syntax does not support hyphens. Name it as the kebab project slug with hyphens replaced by underscores: project `xliff-term-extractor/` → package `xliff_term_extractor/`. This is the one place underscores are correct.
-
-**Git**
-- `.git/`, `.gitignore`, `.gitattributes`, `.gitmodules`
-
-**Claude / Codex tooling**
-- `CLAUDE.md`, `AGENTS.md`, `CODEX.md`, `.claude/`, `.codex/`
-
-**GitHub conventions**
-- `README.md`, `LICENSE`, `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`
-- `.github/` and all its contents
-
-**General ecosystem**
-- `Makefile`, `Dockerfile`, `docker-compose.yml`
-- `.env`, `.env.example`
-- `package.json`, `package-lock.json`, `node_modules/`
-- Hidden tool config files: `.flake8`, `.eslintrc`, `.prettierrc`, `mypy.ini`, etc.
-
-**The principle:** if the name is required or generated by a tool, package manager, framework, or platform, leave it alone. The convention applies only to files and folders you are free to name yourself.
-
----
-
 ## When Creating New Files or Folders
 
-Apply the rule automatically — do not wait to be asked. If you would naturally reach for `MyScript.py` or `data_export.csv`, instead produce `my-script.py` or `data-export.csv`.
-
-When scaffolding a new project, apply the rule to all free-form names in the structure (project directory, scripts, data dirs, docs) and leave ecosystem-conventional names in their standard form.
+For free-form names, apply kebab-case automatically — don't wait to be asked. For names governed by an ecosystem (any `.py` file, framework dirs, tool-generated files), use the convention that ecosystem expects.
 
 ---
 
@@ -79,19 +55,20 @@ When scaffolding a new project, apply the rule to all free-form names in the str
 
 Scan the target path recursively. For each item:
 
-1. Skip exempted names and hidden directories (`.git/`, `.venv/`, `__pycache__/`, etc.)
-2. Flag anything not in lowercase kebab-case
-3. Group violations by directory
+1. Skip hidden directories and build artifacts (`.git/`, `.venv/`, `__pycache__/`, `dist/`, `build/`, `node_modules/`).
+2. Skip anything governed by an ecosystem rule (Python files, framework dirs, vendor samples, tool-generated names).
+3. Flag remaining free-form names that aren't lowercase kebab-case.
+4. Group violations by directory.
 
 Report format:
 
 ```
-Violations in dev/repos/lang-ops/
-  DataProcessor.py → data-processor.py
-  export_Utils/    → export-utils/
+Free-form violations in dev/lang-ops/
+  My Notes.md       → my-notes.md
+  data_export.csv   → data-export.csv
 
-Exempt (kept as-is):
-  manage.py, __init__.py, migrations/0001_initial.py
+Ecosystem-governed (kept as-is):
+  manage.py, step_1_logic.py, migrations/0001_initial.py, Krake/
 ```
 
 Then ask: "Rename these now, or review first?"
@@ -100,20 +77,18 @@ Then ask: "Rename these now, or review first?"
 
 ## When Renaming Files
 
-Propose all renames before executing any. Confirm with the user, then apply in one pass.
-
-If renaming a Python module that is imported elsewhere in the project, flag the affected import statements — they will need updating after the rename.
+Propose all renames before executing any. Confirm, then apply in one pass. Before renaming, check for references in docs, scripts, or config and update them in the same pass.
 
 ---
 
 ## Edge Cases
 
-**Clashes:** If the kebab form already exists, append a disambiguator: `meeting-notes-2.md`, or use a date prefix.
+**Clashes:** Append a disambiguator — `meeting-notes-2.md` — or use a date prefix.
 
-**Version strings:** `v1`, `v2`, `v1-2` inline are fine. Avoid `V1` or `Version1`.
+**Version strings:** `v1`, `v2`, `v1-2` are fine. Avoid `V1` or `Version1`.
 
-**Sequences:** Zero-pad if ordering matters — `chunk-01`, `chunk-02`.
+**Sequences:** Zero-pad when order matters — `chunk-01`, `chunk-02`.
 
-**Underscore-prefixed dirs like `_in`, `_out`:** Treat these as acceptable project-level conventions — they signal a role (input, output, private) rather than a free-form name. Do not flag them in audits.
+**Underscore-prefixed dirs (`_in`, `_out`, `_drafts`):** Treat as acceptable role markers; don't flag.
 
-**Externally-generated asset filenames** (e.g. files exported from SDL Trados, memoQ, or other tools with spaces, locale tags, mixed case): flag these in audits, but note that the name likely came from an upstream system and renaming may break references in the originating workflow. Present the suggested rename but ask before applying it — do not treat it as a straightforward violation.
+**Externally-generated asset filenames** (exports from SDL Trados, memoQ, etc. with spaces or locale tags): flag in audits but note that renaming may break upstream workflow references. Ask before applying.
