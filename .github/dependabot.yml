@@ -1,0 +1,40 @@
+# Dependabot configuration — applied by scripts/security/onboard-repo.sh
+# Monitors dependencies for known vulnerabilities and outdated packages.
+version: 2
+
+updates:
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "security"
+    commit-message:
+      prefix: "chore(deps):"
+
+  # Python (pip) — uncomment if requirements.txt exists
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   labels:
+  #     - "dependencies"
+  #     - "security"
+  #   commit-message:
+  #     prefix: "chore(deps):"
+
+  # Node.js (npm) — uncomment if package.json exists
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   labels:
+  #     - "dependencies"
+  #     - "security"
+  #   commit-message:
+  #     prefix: "chore(deps):"
